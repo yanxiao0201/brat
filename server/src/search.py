@@ -806,7 +806,7 @@ def search_anns_for_relation(ann_objs, arg1, arg1type, arg2, arg2type,
                 arg2ent = ann_obj.get_ann_by_id(r.arg2)
                 if arg2 is not None and not arg2_match_regex.search(arg2ent.get_text()):
                     continue
-                if arg2type is not None and arg2type != arg2ent.type:
+                if arg2type is not None and arg2type != arg2.type:
                     continue
                 
             ann_matches.append(r)
@@ -1074,32 +1074,7 @@ def search_anns_for_text(ann_objs, text,
 
     return matches
 
-def _get_arg_n(ann_obj, ann, n):
-    # helper for format_results, normalizes over BinaryRelationAnnotation
-    # arg1, arg2 and EquivAnnotation entities[0], entities[1], ...
-    # return None if argument n is not available for any reason.
-
-    try:
-        return ann_obj.get_ann_by_id(ann.entities[n]) # Equiv?
-    except annotation.AnnotationNotFoundError:
-        return None
-    except IndexError:
-        return None
-    except AttributeError:
-        pass # not Equiv
-
-    try:
-        if n == 0:
-            return ann_obj.get_ann_by_id(ann.arg1)
-        elif n == 1:
-            return ann_obj.get_ann_by_id(ann.arg2)
-        else:
-            return None
-    except AttributeError:
-        return None
-
-def format_results(matches, concordancing=False, context_length=50,
-                   include_argument_text=False, include_argument_type=False):
+def format_results(matches, concordancing=False, context_length=50):
     """
     Given matches to a search (a SearchMatchSet), formats the results
     for the client, returning a dictionary with the results in the
@@ -1175,22 +1150,6 @@ def format_results(matches, concordancing=False, context_length=50,
         except AttributeError:
             include_trigger_context = False
 
-    if include_argument_text:
-        try:
-            for ann_obj, ann in matches.get_matches():
-                _get_arg_n(ann_obj, ann, 0).text
-                _get_arg_n(ann_obj, ann, 1).text
-        except AttributeError:
-            include_argument_text = False
-
-    if include_argument_type:
-        try:
-            for ann_obj, ann in matches.get_matches():
-                _get_arg_n(ann_obj, ann, 0).type
-                _get_arg_n(ann_obj, ann, 1).type
-        except AttributeError:
-            include_argument_type = False
-
     # extend header fields in order of data fields
     if include_type:
         response['header'].append(('Type', 'string'))
@@ -1211,14 +1170,6 @@ def format_results(matches, concordancing=False, context_length=50,
 
     if include_context or include_trigger_context:
         response['header'].append(('Right context', 'string'))
-
-    if include_argument_type:
-        response['header'].append(('Arg1 type', 'string'))
-        response['header'].append(('Arg2 type', 'string'))
-
-    if include_argument_text:
-        response['header'].append(('Arg1 text', 'string'))
-        response['header'].append(('Arg2 text', 'string'))
 
     # gather sets of reference IDs by document to highlight
     # all matches in a document at once
@@ -1281,13 +1232,6 @@ def format_results(matches, concordancing=False, context_length=50,
             doctext = ann_obj.get_document_text()
             items[-1].append(doctext[context_ann.last_end():end])
 
-        if include_argument_type:
-            items[-1].append(_get_arg_n(ann_obj, ann, 0).type)
-            items[-1].append(_get_arg_n(ann_obj, ann, 1).type)
-
-        if include_argument_text:
-            items[-1].append(_get_arg_n(ann_obj, ann, 0).text)
-            items[-1].append(_get_arg_n(ann_obj, ann, 1).text)
 
     response['items'] = items
     return response
@@ -1296,17 +1240,15 @@ def format_results(matches, concordancing=False, context_length=50,
 
 def _to_bool(s):
     """
-    Given a bool or a string representing a boolean value sent over
-    JSON, returns the corresponding bool.
+    Given a string representing a boolean value sent over
+    JSON, returns the corresponding actual boolean.
     """
-    if s is True or s is False:
-        return s
-    elif s == "true":
+    if s == "true":
         return True
     elif s == "false":
         return False
     else:
-        assert False, "Error: '%s' is not bool or JSON boolean" % str(s)
+        assert False, "Error: '%s' is not a JSON boolean" % s
 
 def search_text(collection, document, scope="collection",
                 concordancing="false", context_length=50,
@@ -1421,16 +1363,13 @@ def search_relation(collection, document, scope="collection",
                     concordancing="false", context_length=50,
                     text_match="word", match_case="false",
                     type=None, arg1=None, arg1type=None, 
-                    arg2=None, arg2type=None,
-                    show_text=False, show_type=False):
+                    arg2=None, arg2type=None):
 
     directory = collection
 
     # Interpret JSON booleans
     concordancing = _to_bool(concordancing)
     match_case = _to_bool(match_case)
-    show_text = _to_bool(show_text)
-    show_type = _to_bool(show_type)
     
     ann_objs = __doc_or_dir_to_annotations(directory, document, scope)
 
@@ -1444,8 +1383,7 @@ def search_relation(collection, document, scope="collection",
                                        text_match=text_match,
                                        match_case=match_case)
 
-    results = format_results(matches, concordancing, context_length,
-                             show_text, show_type)
+    results = format_results(matches, concordancing, context_length)
     results['collection'] = directory
     
     return results

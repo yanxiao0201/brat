@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Minimal standalone brat server based on SimpleHTTPRequestHandler.
+# Minimal standalone brat server based on CGIHTTPRequestHandler.
 
 # Run as apache, e.g. as
 #
@@ -17,6 +17,7 @@ from cgi import FieldStorage
 from BaseHTTPServer import HTTPServer
 from SimpleHTTPServer import SimpleHTTPRequestHandler
 from SocketServer import ForkingMixIn
+from CGIHTTPServer import CGIHTTPRequestHandler
 import socket
 
 # brat imports
@@ -154,14 +155,14 @@ class PathPermissions(object):
 
         return self
 
-class BratHTTPRequestHandler(SimpleHTTPRequestHandler):
+class BratHTTPRequestHandler(CGIHTTPRequestHandler):
     """Minimal handler for brat server."""
 
     permissions = PathPermissions().parse(_PERMISSIONS.split('\n'))
 
     def log_request(self, code='-', size='-'):
         if _VERBOSE_HANDLER:
-            SimpleHTTPRequestHandler.log_request(self, code, size)
+            CGIHTTPRequestHandler.log_request(self, code, size)
         else:
             # just ignore logging
             pass
@@ -227,6 +228,37 @@ class BratHTTPRequestHandler(SimpleHTTPRequestHandler):
             self.wfile.write(response_data[1])
         return 0
 
+    def run_brat_exec(self):
+        """Execute brat server using execfile('ajax.cgi')."""
+
+        # stipped down from CGIHTTPRequestHandler run_cgi()
+
+        scriptfile = self.translate_path('/ajax.cgi')
+
+        env = {}
+        env['REQUEST_METHOD'] = self.command
+        env['REMOTE_HOST'] = self.address_string()
+        env['REMOTE_ADDR'] = self.client_address[0]
+        env['CONTENT_LENGTH'] = self.headers.getheader('content-length')
+        env['HTTP_COOKIE'] = ', '.join(filter(None, self.headers.getheaders('cookie')))
+        os.environ.update(env)
+
+        self.send_response(200)
+
+        try:
+            saved = sys.stdin, sys.stdout, sys.stderr
+            sys.stdin, sys.stdout = self.rfile, self.wfile
+            sys.argv = [scriptfile]
+            try:
+                execfile(scriptfile, {'__name__': '__main__',
+                                      '__file__': __file__ })
+            finally:
+                sys.stdin, sys.stdout, sys.stderr = saved
+        except SystemExit, sts:
+            print >> sys.stderr, 'exit status', sts
+        else:
+            print >> sys.stderr, 'exit OK'
+
     def allow_path(self):
         """Test whether to allow a request for self.path."""
 
@@ -264,14 +296,14 @@ class BratHTTPRequestHandler(SimpleHTTPRequestHandler):
         elif self.is_brat():
             self.run_brat_direct()
         else:
-            SimpleHTTPRequestHandler.do_GET(self)
+            CGIHTTPRequestHandler.do_GET(self)
 
     def do_HEAD(self):
         """Serve a HEAD request."""
         if not self.allow_path():
             self.send_error(403)
         else:
-            SimpleHTTPRequestHandler.do_HEAD(self)
+            CGIHTTPRequestHandler.do_HEAD(self)
        
 class BratServer(ForkingMixIn, HTTPServer):
     def __init__(self, server_address):
@@ -306,7 +338,7 @@ server is experimental and should not be run as administrator.
 
     try:
         server = BratServer((_DEFAULT_SERVER_ADDR, port))
-        print >> sys.stderr, "Serving brat at http://%s:%d" % server.server_address
+        print >> sys.stderr, "Serving brat at http://127.0.0.1:%d" % port
         server.serve_forever()
     except KeyboardInterrupt:
         # normal exit

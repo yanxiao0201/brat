@@ -148,7 +148,7 @@ if __name__ == '__main__':
                     text = txt_file.read()
                 print '# Original text:'
                 print text.replace('\n', '\\n')
-                offsets = [o for o in newline_sentence_boundary_gen(text)]
+                offsets = [o for o in en_sentence_boundary_gen(text)]
                 print '# Offsets:'
                 print offsets
                 print '# Sentences:'
@@ -182,7 +182,7 @@ if __name__ == '__main__':
         ret = [o for o in jp_sentence_boundary_gen(sentence)]
         ans = [(1, 5), (6, 12), (12, 15), (16, 18)]
         assert ret == ans, '%s != %s' % (ret, ans)
-        print 'Successful!'
+        print 'Succesful!'
 
         sentence = ' One of these days Jimmy, one of these days. Boom! Kaboom '
         print 'Sentence:', sentence
@@ -191,4 +191,4 @@ if __name__ == '__main__':
         ret = [o for o in en_sentence_boundary_gen(sentence)]
         ans = [(1, 44), (45, 50), (51, 57)]
         assert ret == ans, '%s != %s' % (ret, ans)
-        print 'Successful!'
+        print 'Succesful!'

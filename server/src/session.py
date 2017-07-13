@@ -18,7 +18,7 @@ from Cookie import CookieError, SimpleCookie
 from atexit import register as atexit_register
 from datetime import datetime, timedelta
 from hashlib import sha224
-from os import close as os_close, makedirs, remove
+from os import makedirs, remove
 from os.path import exists, dirname, join as path_join, isfile
 from shutil import copy
 from shutil import move
@@ -184,9 +184,7 @@ def close_session():
     # Write to a temporary file and move it in place, for safety
     tmp_file_path = None
     try:
-        tmp_file_fh, tmp_file_path = mkstemp()
-        os_close(tmp_file_fh)
-
+        _, tmp_file_path = mkstemp()
         with open(tmp_file_path, 'wb') as tmp_file:
             pickle_dump(CURRENT_SESSION, tmp_file)
         copy(tmp_file_path, get_session_pickle_path(CURRENT_SESSION.get_sid()))
@@ -231,8 +229,7 @@ if __name__ == '__main__':
     init_session('127.0.0.1')
     tmp_file_path = None
     try:
-        tmp_file_fh, tmp_file_path = mkstemp()
-        os_close(tmp_file_fh)
+        _, tmp_file_path = mkstemp()
         session = get_session()
         session['foo'] = 'bar'
         with open(tmp_file_path, 'wb') as tmp_file:
