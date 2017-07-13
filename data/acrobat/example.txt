@@ -1,1 +1,1 @@
-This is just an example. Joey is a 24-year-old person. In July 10 2017, he studies CS.
+This is just an example. Joey is a 24-year-old person. On July 10 2017, he studies CS.
