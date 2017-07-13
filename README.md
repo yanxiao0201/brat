@@ -19,14 +19,18 @@ Possible error: `Error binding to port 8001 : Address already in use`. Solution:
 
 ### Usage ###
 
-The data has been placed in [`data/acrobat`](`data/acrobat`).
+The data has been placed in [`data/acrobat`](`data/acrobat`). Import the data as plain text files (`.txt`). *Important*: Never commit real data to this repo. 
 
 In your web browser, visit `http://127.0.0.1:8001`. 
-Select the document you want to annoate, e.g. `data/acrobat/i2b2.txt`.
+Select the document you want to annoate, e.g. `data/acrobat/example.txt`.
 Find the login button at the top right corner. Log in using the username and password you entered previosuly.
 Then you should be able to annotate by selecting any word or phrase. Play with it.
 To export the annotations, click the data button on the top.
 The `ann` format is recommended, which you can easily convert to other formats (scripts coming).
+
+<p align="center">
+  <img src="annotation_screenshot.png" alt="" width="600" />
+</p>
 
 ## Documentation ##
 
