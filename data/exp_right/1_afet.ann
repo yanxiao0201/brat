@@ -1,0 +1,85 @@
+T1	Temporal_Concept 2 13	39-year-old
+T2	Disease_or_Syndrome 14 19	obese
+T3	Population_Group 20 25	woman
+T4	Idea_or_Concept 26 35	presented
+T5	Disease_or_Syndrome 80 115	acute respiratory distress syndrome
+T6	Functional_Concept 146 156	refractory
+T7	Finding 157 166	hypoxemia
+T8	Spatial_Concept 178 189	veno-venous
+T9	Therapeutic_or_Preventive_Procedure 190 225	extracorporeal membrane oxygenation
+T10	Functional_Concept 247 258	initiated .
+T11	Temporal_Concept 262 265	day
+T12	Spatial_Concept 271 277	venous
+T13	Pathologic_Function 278 304	catheter-related infection
+T14	Idea_or_Concept 309 318	suspected
+T15	Body_Part__Organ__or_Organ_Component 325 347	left subclavian venous
+T16	Medical_Device 348 356	catheter
+T17	Health_Care_Activity 361 369	inserted
+T18	Functional_Concept 370 375	using
+T19	Body_Substance 407 412	blood
+T20	Qualitative_Concept 422 428	freely
+T21	Pathologic_Function 429 438	aspirated
+T22	Therapeutic_or_Preventive_Procedure 456 483	insertion of the catheter .
+T23	Pathologic_Function 494 517	acute circulatory shock
+T24	Functional_Concept 522 530	observed
+T25	Diagnostic_Procedure 556 584	transthoracic echocardiogram
+T26	Qualitative_Concept 585 593	revealed
+T27	Disease_or_Syndrome 594 614	pericardial effusion
+T28	Functional_Concept 620 629	collapsed
+T29	Spatial_Concept 630 635	right
+T30	Idea_or_Concept 647 657	suggesting
+T31	Disease_or_Syndrome 658 677	cardiac tamponade .
+T32	Diagnostic_Procedure 682 693	chest X-ray
+T33	Food 700 705	Fig .
+T34	Animal 714 720	showed
+T35	Medical_Device 738 746	catheter
+T36	Body_Part__Organ__or_Organ_Component 754 765	left lung .
+T37	Disease_or_Syndrome 766 780	Cardiac arrest
+T38	Idea_or_Concept 792 800	emergent
+T39	Therapeutic_or_Preventive_Procedure 801 811	sternotomy
+T40	Functional_Concept 816 825	performed
+T41	Therapeutic_or_Preventive_Procedure 832 845	ECMO-assisted
+T42	Therapeutic_or_Preventive_Procedure 846 875	cardiopulmonary resuscitation
+T43	Body_Part__Organ__or_Organ_Component 882 896	femoral artery
+T44	Eukaryote 897 909	cannu-lation
+T45	Spatial_Concept 916 938	venous-venous-arterial
+T46	Body_Part__Organ__or_Organ_Component 952 968	Pulmonary artery
+T47	Finding 969 980	perforation
+T48	Food 987 992	Fig .
+T49	Pathologic_Function 1005 1020	hemopericardium
+T50	Temporal_Concept 1026 1030	then
+T51	Health_Care_Activity 1031 1041	surgically
+T52	Functional_Concept 1042 1050	repaired
+T53	Medical_Device 1057 1065	catheter
+T54	Finding 1066 1078	withdrawal .
+T55	Clinical_Attribute 1083 1098	hospital course
+T56	Spatial_Concept 1103 1110	further
+T57	Functional_Concept 1111 1122	complicated
+T58	Disease_or_Syndrome 1126 1137	severe ARDS
+T59	Intellectual_Product 1126 1132	severe
+T60	Mental_Process 1133 1137	ARDS
+T61	Temporal_Concept 1138 1150	secondary to
+T62	Bacterium 1151 1172	Enterococcus faecalis
+T63	Disease_or_Syndrome 1173 1183	bacteremia
+T64	Temporal_Concept 1189 1193	redo
+T65	Spatial_Concept 1194 1205	veno-venous
+T66	Therapeutic_or_Preventive_Procedure 1206 1212	ECMO .
+T67	Patient_or_Disabled_Group 1217 1224	patient
+T68	Functional_Concept 1225 1229	made
+T69	Qualitative_Concept 1232 1236	full
+T70	Organism_Function 1237 1245	recovery
+T71	Health_Care_Activity 1254 1264	discharged
+T72	Conceptual_Entity 1265 1269	home
+T73	Temporal_Concept 1274 1280	months
+T74	Health_Care_Activity 1287 1305	hospital admission
+T75	Biomedical_Occupation_or_Discipline 1314 1325	neuro-logic
+T76	Professional_or_Occupational_Group 1329 1344	cardiopulmonary
+T77	Finding 1345 1355	sequelae .
+T78	Food 1356 1361	Fig .
+T79	Finding 1362 1363	1
+T80	Diagnostic_Procedure 1364 1375	Chest X-ray
+T81	Animal 1376 1383	showing
+T82	Spatial_Concept 1388 1401	malpositioned
+T83	Functional_Concept 1402 1406	left
+T84	Finding 1407 1441	subclavian central venous catheter
+T85	Mental_Process 1442 1451	Intensive

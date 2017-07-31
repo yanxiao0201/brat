@@ -1,0 +1,500 @@
+T1	Temporal_Concept 2 13	44-year-old
+T2	Temporal_Concept 2 13	44-year-old
+T3	Organism_Attribute 14 18	male
+T4	Qualitative_Concept 14 18	male
+T5	Disease_or_Syndrome 24 28	ESRD
+T6	Qualitative_Concept 40 45	usual
+T7	Finding 46 61	state of health
+T8	Temporal_Concept 72 75	day
+T9	Health_Care_Activity 79 94	hospitalization
+T10	Functional_Concept 110 122	unresponsive
+T11	Finding 110 122	unresponsive
+T12	Finding 127 136	pulseless
+T13	Functional_Concept 144 158	hemodialysis .
+T14	Therapeutic_or_Preventive_Procedure 144 158	hemodialysis .
+T15	Medical_Device 162 194	automated external defibrillator
+T16	Functional_Concept 199 205	placed
+T17	Spatial_Concept 199 205	placed
+T18	Activity 199 205	placed
+T19	Qualitative_Concept 213 221	received
+T20	Qualitative_Concept 222 233	appropriate
+T21	Pathologic_Function 234 239	shock
+T22	Population_Group 251 260	transient
+T23	Temporal_Concept 251 260	transient
+T24	Finding 261 266	CPR .
+T25	Therapeutic_or_Preventive_Procedure 261 266	CPR .
+T26	Amino_Acid__Peptide__or_Protein 261 266	CPR .
+T27	Enzyme 261 266	CPR .
+T28	Functional_Concept 274 281	brought
+T29	Health_Care_Related_Organization 289 309	emergency department
+T30	Spatial_Concept 314 321	further
+T31	Occupation_or_Discipline 322 334	management .
+T32	Health_Care_Activity 322 334	management .
+T33	Occupational_Activity 322 334	management .
+T34	Occupation_or_Discipline 339 346	history
+T35	Functional_Concept 339 346	history
+T36	Finding 339 346	history
+T37	Organism_Attribute 339 346	history
+T38	Conceptual_Entity 339 346	history
+T39	Functional_Concept 347 355	included
+T40	Finding 356 370	hypertension ,
+T41	Disease_or_Syndrome 356 370	hypertension ,
+T42	Disease_or_Syndrome 371 394	hepatitis C infection ,
+T43	Disease_or_Syndrome 395 433	human immunodeficiency virus infection
+T44	Plant 436 444	anemia ,
+T45	Disease_or_Syndrome 436 444	anemia ,
+T46	Disease_or_Syndrome 449 480	secondary hyperparathyroidism .
+T47	Functional_Concept 484 493	arrival ,
+T48	Activity 484 493	arrival ,
+T49	Finding 501 523	hemodynamically stable
+T50	Finding 528 537	euvolemic
+T51	Health_Care_Activity 541 547	exam .
+T52	Functional_Concept 548 555	Initial
+T53	Idea_or_Concept 548 555	Initial
+T54	Qualitative_Concept 548 555	Initial
+T55	Temporal_Concept 548 555	Initial
+T56	Idea_or_Concept 556 571	laboratory data
+T57	Qualitative_Concept 572 580	revealed
+T58	Quantitative_Concept 584 595	uncorrected
+T59	Pharmacologic_Substance 596 603	calcium
+T60	Inorganic_Chemical 596 603	calcium
+T61	Biologically_Active_Substance 596 603	calcium
+T62	Vitamin 596 603	calcium
+T63	Element__Ion__or_Isotope 596 603	calcium
+T64	Finding 607 611	1.65
+T65	Intellectual_Product 607 611	1.65
+T66	Quantitative_Concept 612 618	mmol/L
+T67	Finding 621 627	normal
+T68	Quantitative_Concept 621 627	normal
+T69	Qualitative_Concept 621 627	normal
+T70	Intellectual_Product 628 635	2.12.55
+T71	Pharmacologic_Substance 647 662	ionized calcium
+T72	Laboratory_Procedure 647 662	ionized calcium
+T73	Element__Ion__or_Isotope 647 662	ionized calcium
+T74	Biologically_Active_Substance 647 662	ionized calcium
+T75	Element__Ion__or_Isotope 647 662	ionized calcium
+T76	Finding 666 670	0.71
+T77	Intellectual_Product 666 670	0.71
+T78	Inorganic_Chemical 708 717	potassium
+T79	Element__Ion__or_Isotope 708 717	potassium
+T80	Pharmacologic_Substance 708 717	potassium
+T81	Laboratory_Procedure 708 717	potassium
+T82	Inorganic_Chemical 760 769	magnesium
+T83	Element__Ion__or_Isotope 760 769	magnesium
+T84	Pharmacologic_Substance 760 769	magnesium
+T85	Element__Ion__or_Isotope 819 829	phosphorus
+T86	Pharmacologic_Substance 819 829	phosphorus
+T87	Quantitative_Concept 833 837	0.97
+T88	Intellectual_Product 833 837	0.97
+T89	Functional_Concept 874 881	Initial
+T90	Idea_or_Concept 874 881	Initial
+T91	Qualitative_Concept 874 881	Initial
+T92	Temporal_Concept 874 881	Initial
+T93	Finding 882 899	electrocardiogram
+T94	Intellectual_Product 882 899	electrocardiogram
+T95	Diagnostic_Procedure 882 899	electrocardiogram
+T96	Spatial_Concept 882 899	electrocardiogram
+T97	Animal 900 906	showed
+T98	Finding 909 921	sinus rhythm
+T99	Finding 929 950	prolonged QT interval
+T100	Qualitative_Concept 955 962	diffuse
+T101	Finding 963 969	T-wave
+T102	Functional_Concept 970 977	changes
+T103	Quantitative_Concept 970 977	changes
+T104	Food 980 985	Fig .
+T105	Medical_Device 986 990	1a )
+T106	Intellectual_Product 986 990	1a )
+T107	Quantitative_Concept 1000 1009	minutes ,
+T108	Temporal_Concept 1000 1009	minutes ,
+T109	Quantitative_Concept 1000 1009	minutes ,
+T110	Temporal_Concept 1000 1009	minutes ,
+T111	Finding 1023 1042	torsades de pointes
+T112	Disease_or_Syndrome 1023 1042	torsades de pointes
+T113	Intellectual_Product 1051 1055	1b )
+T114	Functional_Concept 1067 1081	unresponsive .
+T115	Finding 1067 1081	unresponsive .
+T116	Finding 1095 1107	resuscitated
+T117	Functional_Concept 1112 1123	transferred
+T118	Health_Care_Related_Organization 1131 1152	intensive care unit .
+T119	Idea_or_Concept 1131 1152	intensive care unit .
+T120	Manufactured_Object 1131 1152	intensive care unit .
+T121	Functional_Concept 1153 1162	Treatment
+T122	Research_Activity 1153 1162	Treatment
+T123	Therapeutic_or_Preventive_Procedure 1153 1162	Treatment
+T124	Conceptual_Entity 1153 1162	Treatment
+T125	Health_Care_Activity 1153 1162	Treatment
+T126	Disease_or_Syndrome 1170 1199	secondary hyperparathyroidism
+T127	Functional_Concept 1209 1218	initiated
+T128	Idea_or_Concept 1209 1218	initiated
+T129	Quantitative_Concept 1219 1220	3
+T130	Finding 1219 1220	3
+T131	Classification 1219 1220	3
+T132	Temporal_Concept 1221 1226	years
+T133	Event 1227 1232	prior
+T134	Temporal_Concept 1227 1232	prior
+T135	Laboratory_Procedure 1242 1283	intact parathyroid hormone ( iPTH ) level
+T136	Quantitative_Concept 1292 1298	pmol/L
+T137	Finding 1301 1307	normal
+T138	Quantitative_Concept 1301 1307	normal
+T139	Qualitative_Concept 1301 1307	normal
+T140	Functional_Concept 1331 1339	included
+T141	Pharmacologic_Substance 1340 1352	paricalcitol
+T142	Organic_Chemical 1340 1352	paricalcitol
+T143	Vitamin 1340 1352	paricalcitol
+T144	Functional_Concept 1358 1370	hemodialysis
+T145	Therapeutic_or_Preventive_Procedure 1358 1370	hemodialysis
+T146	Temporal_Concept 1375 1380	daily
+T147	Pharmacologic_Substance 1381 1393	cinacalcet .
+T148	Organic_Chemical 1381 1393	cinacalcet .
+T149	Temporal_Concept 1394 1405	Three weeks
+T150	Temporal_Concept 1406 1414	prior to
+T151	Health_Care_Activity 1415 1426	admission ,
+T152	Pharmacologic_Substance 1431 1441	cinacalcet
+T153	Organic_Chemical 1431 1441	cinacalcet
+T154	Quantitative_Concept 1442 1446	dose
+T155	Clinical_Attribute 1442 1446	dose
+T156	Quantitative_Concept 1451 1460	increased
+T157	Functional_Concept 1451 1460	increased
+T158	Finding 1466 1468	60
+T159	Functional_Concept 1469 1487	to 90 mg daily due
+T160	Quantitative_Concept 1472 1474	90
+T161	Finding 1472 1474	90
+T162	Quantitative_Concept 1475 1519	mg daily due to an iPTH level of 85.6 pmol/L
+T163	Temporal_Concept 1478 1483	daily
+T164	Laboratory_Procedure 1494 1504	iPTH level
+T165	Pharmacologic_Substance 1522 1529	calcium
+T166	Inorganic_Chemical 1522 1529	calcium
+T167	Biologically_Active_Substance 1522 1529	calcium
+T168	Vitamin 1522 1529	calcium
+T169	Element__Ion__or_Isotope 1522 1529	calcium
+T170	Quantitative_Concept 1534 1538	2.11
+T171	Finding 1534 1538	2.11
+T172	Classification 1534 1538	2.11
+T173	Quantitative_Concept 1539 1546	mmol/ L
+T174	Element__Ion__or_Isotope 1551 1561	phosphorus
+T175	Pharmacologic_Substance 1551 1561	phosphorus
+T176	Conceptual_Entity 1588 1592	home
+T177	Clinical_Attribute 1593 1604	medications
+T178	Pharmacologic_Substance 1593 1604	medications
+T179	Functional_Concept 1605 1613	included
+T180	Pharmacologic_Substance 1614 1635	sevelamer carbonate ,
+T181	Organic_Chemical 1614 1635	sevelamer carbonate ,
+T182	Pharmacologic_Substance 1636 1646	nifedipine
+T183	Organic_Chemical 1636 1646	nifedipine
+T184	Geographic_Area 1647 1651	XL ,
+T185	Pharmacologic_Substance 1656 1678	metoprolol succinate .
+T186	Organic_Chemical 1656 1678	metoprolol succinate .
+T187	Temporal_Concept 1679 1693	On admission ,
+T188	Pharmacologic_Substance 1694 1704	cinacalcet
+T189	Organic_Chemical 1694 1704	cinacalcet
+T190	Qualitative_Concept 1709 1718	stopped ,
+T191	Inorganic_Chemical 1723 1732	magnesium
+T192	Element__Ion__or_Isotope 1723 1732	magnesium
+T193	Pharmacologic_Substance 1723 1732	magnesium
+T194	Inorganic_Chemical 1735 1746	potassium ,
+T195	Element__Ion__or_Isotope 1735 1746	potassium ,
+T196	Pharmacologic_Substance 1735 1746	potassium ,
+T197	Laboratory_Procedure 1735 1746	potassium ,
+T198	Pharmacologic_Substance 1751 1758	calcium
+T199	Inorganic_Chemical 1751 1758	calcium
+T200	Biologically_Active_Substance 1751 1758	calcium
+T201	Vitamin 1751 1758	calcium
+T202	Element__Ion__or_Isotope 1751 1758	calcium
+T203	Functional_Concept 1764 1778	administered .
+T204	Functional_Concept 1788 1795	factors
+T205	Conceptual_Entity 1788 1795	factors
+T206	Qualitative_Concept 1796 1803	capable
+T207	Functional_Concept 1807 1815	inducing
+T208	Laboratory_or_Test_Result 1816 1828	hypocalcemia
+T209	Disease_or_Syndrome 1816 1828	hypocalcemia
+T210	Finding 1834 1846	identified .
+T211	Qualitative_Concept 1834 1846	identified .
+T212	Finding 1851 1860	diagnosis
+T213	Research_Activity 1851 1860	diagnosis
+T214	Qualitative_Concept 1851 1860	diagnosis
+T215	Finding 1864 1883	torsades de pointes
+T216	Disease_or_Syndrome 1864 1883	torsades de pointes
+T217	Qualitative_Concept 1884 1899	associated with
+T218	Finding 1900 1921	prolonged QT interval
+T219	Quantitative_Concept 1925 1929	part
+T220	Spatial_Concept 1925 1929	part
+T221	Functional_Concept 1930 1936	due to
+T222	Pharmacologic_Substance 1937 1955	cinacalcet-induced
+T223	Organic_Chemical 1937 1955	cinacalcet-induced
+T224	Functional_Concept 1937 1955	cinacalcet-induced
+T225	Intellectual_Product 1956 1962	severe
+T226	Qualitative_Concept 1956 1962	severe
+T227	Laboratory_or_Test_Result 1963 1975	hypocalcemia
+T228	Disease_or_Syndrome 1963 1975	hypocalcemia
+T229	Functional_Concept 1980 1986	made .
+T230	Intellectual_Product 1987 1991	Once
+T231	Temporal_Concept 1987 1991	Once
+T232	Element__Ion__or_Isotope 1996 2014	total body calcium
+T233	Fully_Formed_Anatomical_Structure 1996 2006	total body
+T234	Anatomical_Structure 2002 2006	body
+T235	Human 2002 2006	body
+T236	Pharmacologic_Substance 2007 2014	calcium
+T237	Inorganic_Chemical 2007 2014	calcium
+T238	Biologically_Active_Substance 2007 2014	calcium
+T239	Vitamin 2007 2014	calcium
+T240	Element__Ion__or_Isotope 2007 2014	calcium
+T241	Functional_Concept 2019 2029	replaced ,
+T242	Clinical_Attribute 2034 2045	QT interval
+T243	Clinical_Attribute 2034 2045	QT interval
+T244	Research_Activity 2046 2056	normalized
+T245	Finding 2064 2081	electrocardiogram
+T246	Intellectual_Product 2064 2081	electrocardiogram
+T247	Diagnostic_Procedure 2064 2081	electrocardiogram
+T248	Spatial_Concept 2064 2081	electrocardiogram
+T249	Spatial_Concept 2089 2096	further
+T250	Finding 2097 2109	ar-rhythmias
+T251	Functional_Concept 2115 2125	observed .
+T252	Pharmacologic_Substance 2126 2143	Phosphate binders
+T253	Pharmacologic_Substance 2148 2157	vitamin D
+T254	Organic_Chemical 2148 2157	vitamin D
+T255	Vitamin 2148 2157	vitamin D
+T256	Biologically_Active_Substance 2158 2165	sterols
+T257	Organic_Chemical 2158 2165	sterols
+T258	Pharmacologic_Substance 2158 2165	sterols
+T259	Occupation_or_Discipline 2186 2196	management
+T260	Health_Care_Activity 2186 2196	management
+T261	Occupational_Activity 2186 2196	management
+T262	Disease_or_Syndrome 2201 2230	secondary hyperparathyroidism
+T263	Patient_or_Disabled_Group 2234 2242	patients
+T264	Disease_or_Syndrome 2248 2254	ESRD .
+T265	Pharmacologic_Substance 2255 2265	Cinacalcet
+T266	Organic_Chemical 2255 2265	Cinacalcet
+T267	Temporal_Concept 2270 2278	recently
+T268	Functional_Concept 2279 2289	introduced
+T269	Conceptual_Entity 2296 2307	alternative
+T270	Functional_Concept 2308 2316	option ,
+T271	Idea_or_Concept 2308 2316	option ,
+T272	Occupational_Activity 2317 2324	working
+T273	Gene_or_Genome 2333 2357	calcium sensing receptor
+T274	Receptor 2333 2357	calcium sensing receptor
+T275	Amino_Acid__Peptide__or_Protein 2333 2357	calcium sensing receptor
+T276	Activity 2361 2370	enhancing
+T277	Functional_Concept 2375 2389	sensitivity to
+T278	Cell_Component 2390 2403	extracellular
+T279	Pharmacologic_Substance 2404 2411	calcium
+T280	Inorganic_Chemical 2404 2411	calcium
+T281	Biologically_Active_Substance 2404 2411	calcium
+T282	Vitamin 2404 2411	calcium
+T283	Element__Ion__or_Isotope 2404 2411	calcium
+T284	Activity 2424 2434	inhibiting
+T285	Functional_Concept 2439 2448	release .
+T286	Quantitative_Concept 2439 2448	release .
+T287	Therapeutic_or_Preventive_Procedure 2439 2448	release .
+T288	Health_Care_Activity 2439 2448	release .
+T289	Laboratory_or_Test_Result 2449 2461	Hypocalcemia
+T290	Disease_or_Syndrome 2449 2461	Hypocalcemia
+T291	Quantitative_Concept 2467 2473	common
+T292	Functional_Concept 2467 2473	common
+T293	Intellectual_Product 2467 2473	common
+T294	Pathologic_Function 2474 2490	adverse effect ,
+T295	Phenomenon_or_Process 2516 2525	mitigated
+T296	Temporal_Concept 2533 2543	concurrent
+T297	Functional_Concept 2544 2550	use of
+T298	Pharmacologic_Substance 2551 2564	calcium-based
+T299	Inorganic_Chemical 2551 2564	calcium-based
+T300	Biologically_Active_Substance 2551 2564	calcium-based
+T301	Vitamin 2551 2564	calcium-based
+T302	Element__Ion__or_Isotope 2551 2564	calcium-based
+T303	Functional_Concept 2551 2564	calcium-based
+T304	Idea_or_Concept 2551 2564	calcium-based
+T305	Inorganic_Chemical 2551 2574	calcium-based phosphate
+T306	Pharmacologic_Substance 2551 2574	calcium-based phosphate
+T307	Inorganic_Chemical 2551 2574	calcium-based phosphate
+T308	Pharmacologic_Substance 2551 2574	calcium-based phosphate
+T309	Pharmacologic_Substance 2565 2584	phosphate binders .
+T310	Medical_Device 2575 2584	binders .
+T311	Functional_Concept 2585 2596	Symptomatic
+T312	Laboratory_or_Test_Result 2597 2609	hypocalcemia
+T313	Disease_or_Syndrome 2597 2609	hypocalcemia
+T314	Functional_Concept 2610 2617	induced
+T315	Pharmacologic_Substance 2621 2631	cinacalcet
+T316	Organic_Chemical 2621 2631	cinacalcet
+T317	Gene_or_Genome 2635 2641	rare ,
+T318	Qualitative_Concept 2635 2641	rare ,
+T319	Temporal_Concept 2635 2641	rare ,
+T320	Qualitative_Concept 2653 2659	OPTIMA
+T321	Research_Activity 2660 2667	study ,
+T322	Manufactured_Object 2660 2667	study ,
+T323	Quantitative_Concept 2668 2672	only
+T324	Intellectual_Product 2668 2672	only
+T325	Patient_or_Disabled_Group 2678 2686	patients
+T326	Idea_or_Concept 2687 2696	presented
+T327	Laboratory_or_Test_Result 2704 2723	serum calcium level
+T328	Laboratory_Procedure 2704 2723	serum calcium level
+T329	Quantitative_Concept 2738 2743	mg/dL
+T330	Quantitative_Concept 2746 2750	1.87
+T331	Finding 2746 2750	1.87
+T332	Classification 2746 2750	1.87
+T333	Quantitative_Concept 2751 2759	mmol/L )
+T334	Finding 2762 2783	Torsades de pointes ,
+T335	Disease_or_Syndrome 2762 2783	Torsades de pointes ,
+T336	Disease_or_Syndrome 2786 2831	polymorphic form of ventricular tachycardia ,
+T337	Functional_Concept 2798 2802	form
+T338	Qualitative_Concept 2798 2802	form
+T339	Manufactured_Object 2798 2802	form
+T340	Qualitative_Concept 2835 2839	seen
+T341	Patient_or_Disabled_Group 2843 2851	patients
+T342	Temporal_Concept 2857 2866	prolonged
+T343	Cell 2867 2880	cardiomyocyte
+T344	Intellectual_Product 2907 2916	exhibited
+T345	Finding 2920 2937	electrocardiogram
+T346	Intellectual_Product 2920 2937	electrocardiogram
+T347	Diagnostic_Procedure 2920 2937	electrocardiogram
+T348	Spatial_Concept 2920 2937	electrocardiogram
+T349	Finding 2941 2948	long QT
+T350	Temporal_Concept 2949 2960	intervals .
+T351	Laboratory_or_Test_Result 2961 2975	Hypocalcemia ,
+T352	Disease_or_Syndrome 2961 2975	Hypocalcemia ,
+T353	Finding 2976 2989	hypokalemia ,
+T354	Finding 2994 3008	hypomagnesemia
+T355	Functional_Concept 3009 3017	increase
+T356	Idea_or_Concept 3018 3022	risk
+T357	Finding 3026 3045	torsades de pointes
+T358	Disease_or_Syndrome 3026 3045	torsades de pointes
+T359	Laboratory_or_Test_Result 3077 3089	Hypocalcemia
+T360	Disease_or_Syndrome 3077 3089	Hypocalcemia
+T361	Spatial_Concept 3090 3097	further
+T362	Quantitative_Concept 3098 3107	increases
+T363	Functional_Concept 3098 3107	increases
+T364	Idea_or_Concept 3108 3112	risk
+T365	Functional_Concept 3129 3140	development
+T366	Physiologic_Function 3129 3140	development
+T367	Organism_Function 3129 3140	development
+T368	Temporal_Concept 3144 3149	early
+T369	Patient_or_Disabled_Group 3176 3184	patients
+T370	Finding 3185 3195	arrhythmia
+T371	Functional_Concept 3200 3203	not
+T372	Conceptual_Entity 3204 3211	resolve
+T373	Laboratory_or_Test_Result 3222 3241	serum calcium level
+T374	Laboratory_Procedure 3222 3241	serum calcium level
+T375	Research_Activity 3242 3254	normalized ,
+T376	Inorganic_Chemical 3265 3277	electrolytes
+T377	Pharmacologic_Substance 3265 3277	electrolytes
+T378	Functional_Concept 3283 3293	replaced .
+T379	Intellectual_Product 3301 3312	knowledge ,
+T380	Quantitative_Concept 3325 3328	one
+T381	Quantitative_Concept 3336 3341	first
+T382	Qualitative_Concept 3336 3341	first
+T383	Intellectual_Product 3342 3350	reported
+T384	Health_Care_Activity 3342 3350	reported
+T385	Clinical_Attribute 3342 3356	reported cases
+T386	Intellectual_Product 3342 3356	reported cases
+T387	Functional_Concept 3351 3356	cases
+T388	Quantitative_Concept 3351 3356	cases
+T389	Pharmacologic_Substance 3360 3378	cinacalcet-induced
+T390	Organic_Chemical 3360 3378	cinacalcet-induced
+T391	Functional_Concept 3360 3378	cinacalcet-induced
+T392	Laboratory_or_Test_Result 3379 3391	hypocalcemia
+T393	Disease_or_Syndrome 3379 3391	hypocalcemia
+T394	Functional_Concept 3392 3404	resulting in
+T395	Finding 3405 3424	torsades de pointes
+T396	Disease_or_Syndrome 3405 3424	torsades de pointes
+T397	Disease_or_Syndrome 3429 3445	cardiac arrest .
+T398	Idea_or_Concept 3449 3460	recommended
+T399	Health_Care_Related_Organization 3468 3492	pharmaceutical company ,
+T400	Laboratory_or_Test_Result 3493 3506	serum calcium
+T401	Laboratory_Procedure 3493 3506	serum calcium
+T402	Laboratory_Procedure 3511 3533	ionized calcium levels
+T403	Qualitative_Concept 3544 3552	measured
+T404	Diagnostic_Procedure 3544 3552	measured
+T405	Temporal_Concept 3562 3566	week
+T406	Genetic_Function 3573 3583	initiation
+T407	Functional_Concept 3573 3583	initiation
+T408	Mental_Process 3573 3583	initiation
+T409	Health_Care_Activity 3587 3602	dose adjustment
+T410	Pharmacologic_Substance 3606 3618	cinacalcet .
+T411	Organic_Chemical 3606 3618	cinacalcet .
+T412	Intellectual_Product 3619 3623	Once
+T413	Temporal_Concept 3619 3623	Once
+T414	Quantitative_Concept 3626 3642	maintenance dose
+T415	Qualitative_Concept 3652 3665	established ,
+T416	Temporal_Concept 3666 3673	monthly
+T417	Research_Activity 3674 3684	monitoring
+T418	Health_Care_Activity 3674 3684	monitoring
+T419	Laboratory_or_Test_Result 3688 3701	serum calcium
+T420	Laboratory_Procedure 3688 3701	serum calcium
+T421	Qualitative_Concept 3725 3735	importance
+T422	Functional_Concept 3739 3748	adherence
+T423	Spatial_Concept 3752 3756	oral
+T424	Therapeutic_or_Preventive_Procedure 3757 3780	calcium supplementation
+T425	Qualitative_Concept 3781 3790	as needed
+T426	Temporal_Concept 3781 3790	as needed
+T427	Finding 3801 3809	stressed
+T428	Patient_or_Disabled_Group 3819 3829	patients .
+T429	Functional_Concept 3830 3843	Abnormalities
+T430	Congenital_Abnormality 3830 3843	Abnormalities
+T431	Laboratory_or_Test_Result 3847 3862	serum potassium
+T432	Laboratory_Procedure 3847 3862	serum potassium
+T433	Inorganic_Chemical 3867 3878	magnesium (
+T434	Element__Ion__or_Isotope 3867 3878	magnesium (
+T435	Pharmacologic_Substance 3867 3878	magnesium (
+T436	Finding 3885 3888	EKG
+T437	Diagnostic_Procedure 3885 3888	EKG
+T438	Animal 3889 3896	showing
+T439	Qualitative_Concept 3897 3904	diffuse
+T440	Finding 3905 3925	T wave abnormalities
+T441	Finding 3930 3956	QT interval prolongation ;
+T442	Intellectual_Product 3933 3941	interval
+T443	Temporal_Concept 3933 3941	interval
+T444	Medical_Device 3959 3974	cardiac monitor
+T445	Diagnostic_Procedure 3959 3974	cardiac monitor
+T446	Medical_Device 3975 3981	strips
+T447	Quantitative_Concept 3975 3981	strips
+T448	Clinical_Attribute 3992 3999	patient
+T449	Patient_or_Disabled_Group 3992 3999	patient
+T450	Disease_or_Syndrome 4008 4043	polymorphic ventricular tachycardia
+T451	Idea_or_Concept 4044 4059	consistent with
+T452	Finding 4060 4079	torsades de pointes
+T453	Disease_or_Syndrome 4060 4079	torsades de pointes
+T454	Idea_or_Concept 4101 4105	risk
+T455	Finding 4110 4123	arrhythmias ,
+T456	Temporal_Concept 4128 4135	monthly
+T457	Therapeutic_or_Preventive_Procedure 4136 4162	monitoring of electrolytes
+T458	Geographic_Area 4163 4165	to
+T459	Enzyme 4163 4165	to
+T460	Qualitative_Concept 4163 4165	to
+T461	Amino_Acid__Peptide__or_Protein 4163 4165	to
+T462	Food 4166 4172	ensure
+T463	Finding 4173 4205	normal serum levels of potassium
+T464	Idea_or_Concept 4228 4241	recommended .
+T465	Pharmacologic_Substance 4242 4252	Cinacalcet
+T466	Organic_Chemical 4242 4252	Cinacalcet
+T467	Finding 4263 4267	used
+T468	Patient_or_Disabled_Group 4282 4290	patients
+T469	Qualitative_Concept 4296 4301	known
+T470	Quantitative_Concept 4302 4314	risk factors
+T471	Intellectual_Product 4302 4314	risk factors
+T472	Laboratory_or_Test_Result 4319 4333	hypocalcemia ,
+T473	Disease_or_Syndrome 4319 4333	hypocalcemia ,
+T474	Occupation_or_Discipline 4341 4348	history
+T475	Functional_Concept 4341 4348	history
+T476	Finding 4341 4348	history
+T477	Organism_Attribute 4341 4348	history
+T478	Conceptual_Entity 4341 4348	history
+T479	Finding 4352 4369	QT prolongation ,
+T480	Temporal_Concept 4379 4389	concurrent
+T481	Functional_Concept 4390 4396	use of
+T482	Quantitative_Concept 4403 4405	QT
+T483	Chemical_Viewed_Functionally 4417 4425	agents .
+T484	Intellectual_Product 4417 4425	agents .
+T485	Pharmacologic_Substance 4417 4425	agents .
+T486	Professional_or_Occupational_Group 4426 4433	Authors
+T487	Activity 4434 4446	contribution
+T488	Functional_Concept 4463 4469	access
+T489	Spatial_Concept 4463 4469	access
+T490	Medical_Device 4477 4481	data
+T491	Idea_or_Concept 4477 4481	data
+T492	Eukaryote 4477 4481	data
+T493	Intellectual_Product 4488 4492	role
+T494	Social_Behavior 4488 4492	role
+T495	Conceptual_Entity 4488 4492	role
+T496	Occupation_or_Discipline 4496 4503	writing
+T497	Intellectual_Product 4496 4503	writing
+T498	Mental_Process 4496 4503	writing
+T499	Intellectual_Product 4508 4520	manuscript .
+T500	Manufactured_Object 4508 4520	manuscript .

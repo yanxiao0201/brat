@@ -1,0 +1,11 @@
+T1	Health_Care_Activity 5 11	report
+T2	Intellectual_Product 16 22	images
+T3	Functional_Concept 34 38	case
+T4	Laboratory_or_Test_Result 42 56	atrial flutter
+T5	Finding 62 65	2:1
+T6	Age_Group 62 100	2:1 conduction pattern in a 3 year-old
+T7	Laboratory_or_Test_Result 66 84	conduction pattern
+T8	Qualitative_Concept 101 105	male
+T9	Anatomical_Abnormality 129 132	VSD
+T10	Temporal_Concept 133 144	status-post
+T11	Diagnostic_Procedure 180 205	M-mode echocardiography .
