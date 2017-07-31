@@ -1,0 +1,137 @@
+T1	Qualitative_Concept 7 11	last
+T2	Quantitative_Concept 22 28	number
+T3	Pharmacologic_Substance 32 37	drugs
+T4	Activity 43 52	withdrawn
+T5	Functional_Concept 53 59	due to
+T6	Functional_Concept 60 65	cases
+T7	Functional_Concept 75 82	leading
+T8	Qualitative_Concept 83 85	to
+T9	Research_Activity 96 114	assessment of drug
+T10	Clinical_Attribute 115 128	QT interval .
+T11	Pharmacologic_Substance 143 154	hydroxyzine
+T12	Laboratory_or_Test_Result 159 186	identified as the only drug
+T13	Quantitative_Concept 177 181	only
+T14	Finding 187 191	able
+T15	Qualitative_Concept 192 194	to
+T16	Functional_Concept 195 201	induce
+T17	Finding 202 227	QTc interval prolongation
+T18	Patient_or_Disabled_Group 235 243	patients
+T19	Functional_Concept 244 250	active
+T20	Pharmacologic_Substance 251 263	medication .
+T21	Injury_or_Poisoning 277 297	hydroxyzine overdose
+T22	Therapeutic_or_Preventive_Procedure 302 310	detected
+T23	Idea_or_Concept 311 319	probably
+T24	Functional_Concept 320 326	due to
+T25	Disease_or_Syndrome 372 388	liver impairment
+T26	Pharmacologic_Substance 415 425	Cetirizine
+T27	Pharmacologic_Substance 433 445	hydroxyzines
+T28	Qualitative_Concept 446 451	major
+T29	Functional_Concept 452 458	active
+T30	Biologically_Active_Substance 459 471	metabolite ;
+T31	Body_Substance 492 497	blood
+T32	Classification 498 503	level
+T33	Quantitative_Concept 504 510	dosage
+T34	Functional_Concept 515 518	not
+T35	Functional_Concept 519 530	performed .
+T36	Finding 547 558	combination
+T37	Injury_or_Poisoning 562 582	hydroxyzine overdose
+T38	Population_Group 587 596	transient
+T39	Pathologic_Function 597 610	renal failure
+T40	Pharmacologic_Substance 622 626	lead
+T41	Qualitative_Concept 627 629	to
+T42	Pharmacologic_Substance 630 640	cetirizine
+T43	Finding 641 655	accumulation .
+T44	Pharmacologic_Substance 666 676	cetirizine
+T45	Qualitative_Concept 683 685	to
+T46	Clinical_Attribute 758 764	dose .
+T47	Quantitative_Concept 772 776	only
+T48	Quantitative_Concept 777 780	one
+T49	Occupational_Activity 781 790	published
+T50	Qualitative_Concept 791 799	clinical
+T51	Functional_Concept 800 804	case
+T52	Pharmacologic_Substance 808 827	hydroxyzine-induced
+T53	Finding 828 845	QT prolongation .
+T54	Functional_Concept 851 855	case
+T55	Temporal_Concept 866 875	recurrent
+T56	Amphibian 876 883	syncope
+T57	Pharmacologic_Substance 891 902	hydroxyzine
+T58	Research_Activity 903 912	treatment
+T59	Qualitative_Concept 916 921	usual
+T60	Quantitative_Concept 922 930	posology
+T61	Temporal_Concept 936 947	34-year-old
+T62	Population_Group 948 953	woman
+T63	Idea_or_Concept 954 964	presenting
+T64	Gene_or_Genome 967 971	hERG
+T65	Genetic_Function 972 982	mutation .
+T66	Gene_or_Genome 983 987	hERG
+T67	Gene_or_Genome 988 992	gene
+T68	Occupational_Activity 993 998	codes
+T69	Amino_Acid__Peptide__or_Protein 1007 1014	subunit
+T70	Amino_Acid__Peptide__or_Protein 1020 1037	potassium channel
+T71	Amino_Acid__Peptide__or_Protein 1044 1045	I
+T72	Geographic_Area 1046 1048	Kr
+T73	Organ_or_Tissue_Function 1073 1101	ventricular repolarization .
+T74	Animal 1126 1131	shown
+T75	Pharmacologic_Substance 1137 1148	hydroxyzine
+T76	Mental_or_Behavioral_Dysfunction 1175 1183	blocking
+T77	Gene_or_Genome 1184 1188	hERG
+T78	Spatial_Concept 1189 1197	channels
+T79	Cell_Function 1223 1239	action potential
+T80	Functional_Concept 1256 1264	inducing
+T81	Quantitative_Concept 1278 1284	French
+T82	Research_Activity 1285 1302	pharmacovigilance
+T83	Quantitative_Concept 1317 1322	found
+T84	Functional_Concept 1326 1331	cases
+T85	Finding 1335 1350	QT prolongation
+T86	Pharmacologic_Substance 1362 1373	hydroxyzine
+T87	Idea_or_Concept 1381 1390	suspected
+T88	Idea_or_Concept 1391 1405	accountability
+T89	Intellectual_Product 1406 1413	assumed
+T90	Occupational_Activity 1430 1437	publish
+T91	Qualitative_Concept 1447 1452	first
+T92	Qualitative_Concept 1453 1461	clinical
+T93	Functional_Concept 1462 1466	case
+T94	Finding 1492 1507	QT prolongation
+T95	Quantitative_Concept 1513 1524	drug dosage
+T96	Eukaryote 1525 1531	data .
+T97	Social_Behavior 1536 1547	association
+T98	Pharmacologic_Substance 1599 1605	others
+T99	Qualitative_Concept 1614 1624	well-known
+T100	Idea_or_Concept 1629 1634	risks
+T101	Functional_Concept 1635 1642	factors
+T102	Functional_Concept 1649 1658	including
+T103	Finding 1659 1670	hypokalemia
+T104	Functional_Concept 1699 1705	induce
+T105	Finding 1706 1721	QT prolongation
+T106	Finding 1726 1741	lifethreatening
+T107	Idea_or_Concept 1752 1759	present
+T108	Occupational_Activity 1760 1764	work
+T109	Temporal_Concept 1780 1786	recent
+T110	Functional_Concept 1787 1795	addition
+T111	Pharmacologic_Substance 1799 1810	hydroxyzine
+T112	Intellectual_Product 1818 1831	list of drugs
+T113	Qualitative_Concept 1837 1848	conditional
+T114	Idea_or_Concept 1849 1853	risk
+T115	Pharmacologic_Substance 1865 1870	drugs
+T116	Qualitative_Concept 1871 1873	to
+T117	Patient_or_Disabled_Group 1888 1896	patients
+T118	Disease_or_Syndrome 1902 1931	congenital long QT syndrome .
+T119	Therapeutic_or_Preventive_Procedure 1940 1947	reminds
+T120	Idea_or_Concept 1953 1964	recommended
+T121	Clinical_Attribute 1965 1986	hydroxyzines posology
+T122	Idea_or_Concept 2011 2015	risk
+T123	Finding 2019 2034	QT prolongation
+T124	Amphibian 2039 2046	syncope
+T125	Quantitative_Concept 2047 2056	increases
+T126	Functional_Concept 2073 2077	case
+T127	Finding 2084 2094	overdose .
+T128	Idea_or_Concept 2105 2116	considering
+T129	Quantitative_Concept 2121 2126	large
+T130	Functional_Concept 2127 2133	use of
+T131	Pathologic_Function 2153 2163	recurrence
+T132	Pharmacologic_Substance 2167 2186	hydroxyzine-induced
+T133	Finding 2187 2202	QT prolongation
+T134	Idea_or_Concept 2206 2214	probably
+T135	Idea_or_Concept 2232 2243	Information
+T136	Idea_or_Concept 2252 2257	given
+T137	Professional_or_Occupational_Group 2261 2272	clinician .
