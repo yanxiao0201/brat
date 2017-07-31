@@ -1,0 +1,59 @@
+T1	Temporal_Concept 2 13	54-year-old
+T2	Population_Group 14 19	woman
+T3	Idea_or_Concept 20 29	presented
+T4	Disease_or_Syndrome 35 40	giant
+T5	Disease_or_Syndrome 50 65	hyperthyroidism
+T6	Qualitative_Concept 69 76	unknown
+T7	Finding 88 100	palpitations
+T8	Sign_or_Symptom 105 115	dyspnoea .
+T9	Diagnostic_Procedure 120 123	ECG
+T10	Animal 124 130	showed
+T11	Pathologic_Function 131 142	tachycardia
+T12	Finding 143 164	atrial fibrillation .
+T13	Diagnostic_Procedure 165 181	Echocardiography
+T14	Qualitative_Concept 182 190	revealed
+T15	Qualitative_Concept 226 232	highly
+T16	Qualitative_Concept 233 240	reduced
+T17	Temporal_Concept 241 249	systolic
+T18	Functional_Concept 250 258	function
+T19	Qualitative_Concept 263 270	diffuse
+T20	Sign_or_Symptom 271 284	hypokinesia .
+T21	Quantitative_Concept 347 356	less than
+T22	Quantitative_Concept 357 361	0.03
+T23	Quantitative_Concept 362 367	lU/ml
+T24	Functional_Concept 374 387	physiological
+T25	Quantitative_Concept 388 393	range
+T26	Hormone 419 440	free triiodothyronine
+T27	Classification 478 486	2.304.20
+T28	Quantitative_Concept 487 492	pg/ml
+T29	Laboratory_Procedure 503 517	free thyroxine
+T30	Quantitative_Concept 534 542	amounted
+T31	Food 546 551	Fig .
+T32	Finding 552 553	1
+T33	Diagnostic_Procedure 554 570	Turbo field-echo
+T34	Spatial_Concept 587 596	inversion
+T35	Activity 597 605	recovery
+T36	Intellectual_Product 621 630	sequences
+T37	Spatial_Concept 634 642	vertical
+T38	Spatial_Concept 661 671	horizontal
+T39	Spatial_Concept 686 695	long axis
+T40	Temporal_Concept 696 702	10 min
+T41	Spatial_Concept 709 769	intravenous gadolinium-based contrast agent administration :
+T42	Indicator__Reagent__or_Diagnostic_Aid 721 752	gadolinium-based contrast agent
+T43	Qualitative_Concept 774 781	healthy
+T44	Spatial_Concept 782 787	basal
+T45	Tissue 807 817	myocardium
+T46	Animal 818 823	shows
+T47	Temporal_Concept 827 836	prolonged
+T48	Mental_Process 848 857	retention
+T49	Qualitative_Concept 877 882	black
+T50	Functional_Concept 920 930	transmural
+T51	Pathologic_Function 931 935	scar
+T52	Spatial_Concept 943 949	apical
+T53	Spatial_Concept 950 958	segments
+T54	Functional_Concept 959 966	retains
+T55	Element__Ion__or_Isotope 971 981	gadolinium
+T56	Finding 992 998	bright
+T57	Qualitative_Concept 999 1009	appearance
+T58	Finding 1041 1048	finding
+T59	Disease_or_Syndrome 1052 1079	bilateral pleural effusions

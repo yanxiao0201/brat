@@ -1,0 +1,204 @@
+T1	Temporal_Concept 2 13	58-year-old
+T2	Temporal_Concept 2 13	58-year-old
+T3	Clinical_Attribute 14 21	patient
+T4	Patient_or_Disabled_Group 14 21	patient
+T5	Finding 36 77	history of paroxysmal atrial fibrillation
+T6	Temporal_Concept 47 57	paroxysmal
+T7	Quantitative_Concept 88 103	circumferential
+T8	Spatial_Concept 88 103	circumferential
+T9	Body_Part__Organ__or_Organ_Component 104 118	pulmonary vein
+T10	Functional_Concept 119 128	isolation
+T11	Therapeutic_or_Preventive_Procedure 119 128	isolation
+T12	Laboratory_Procedure 119 128	isolation
+T13	Temporal_Concept 153 163	3 months ,
+T14	Idea_or_Concept 167 176	presented
+T15	Functional_Concept 184 195	symptomatic
+T16	Temporal_Concept 209 214	cycle
+T17	Quantitative_Concept 215 221	length
+T18	Research_Activity 215 221	length
+T19	Gene_or_Genome 229 231	ms
+T20	Enzyme 229 231	ms
+T21	Amino_Acid__Peptide__or_Protein 229 231	ms
+T22	Conceptual_Entity 229 231	ms
+T23	Food 236 241	Fig .
+T24	Clinical_Attribute 252 259	patient
+T25	Patient_or_Disabled_Group 252 259	patient
+T26	Pharmacologic_Substance 267 277	amiodarone
+T27	Organic_Chemical 267 277	amiodarone
+T28	Geographic_Area 284 286	mg
+T29	Quantitative_Concept 284 286	mg
+T30	Element__Ion__or_Isotope 284 286	mg
+T31	Pharmacologic_Substance 284 286	mg
+T32	Temporal_Concept 287 294	daily )
+T33	Body_Part__Organ__or_Organ_Component 299 307	PVI-redo
+T34	Functional_Concept 299 307	PVI-redo
+T35	Therapeutic_or_Preventive_Procedure 299 307	PVI-redo
+T36	Laboratory_Procedure 299 307	PVI-redo
+T37	Temporal_Concept 299 307	PVI-redo
+T38	Functional_Concept 312 321	performed
+T39	Functional_Concept 322 327	using
+T40	Intellectual_Product 330 335	novel
+T41	Qualitative_Concept 330 335	novel
+T42	Spatial_Concept 336 344	circular
+T43	Activity 345 352	mapping
+T44	Medical_Device 367 375	catheter
+T45	Qualitative_Concept 405 412	Diamond
+T46	Element__Ion__or_Isotope 405 412	Diamond
+T47	Gene_or_Genome 419 425	Calif.
+T48	Geographic_Area 428 433	USA )
+T49	Quantitative_Concept 446 459	ten-electrode
+T50	Disease_or_Syndrome 446 459	ten-electrode
+T51	Medical_Device 446 459	ten-electrode
+T52	Manufactured_Object 446 459	ten-electrode
+T53	Hazardous_or_Poisonous_Substance 470 482	lasso-shaped
+T54	Organic_Chemical 470 482	lasso-shaped
+T55	Spatial_Concept 470 482	lasso-shaped
+T56	Gene_or_Genome 483 492	cathe-ter
+T57	Cell_Component 483 492	cathe-ter
+T58	Social_Behavior 498 504	allows
+T59	Functional_Concept 505 514	irrigated
+T60	Spatial_Concept 515 523	unipolar
+T61	Quantitative_Concept 528 536	bi-polar
+T62	Therapeutic_or_Preventive_Procedure 537 567	radiofrequency ( RF ) ablation
+T63	Qualitative_Concept 570 574	cool
+T64	Natural_Phenomenon_or_Process 575 579	flow
+T65	Finding 583 585	60
+T66	Quantitative_Concept 586 594	ml/min )
+T67	Medical_Device 602 611	electrode
+T68	Manufactured_Object 602 611	electrode
+T69	Manufactured_Object 619 627	switched
+T70	Body_Part__Organ__or_Organ_Component 656 661	PVI ,
+T71	Functional_Concept 656 661	PVI ,
+T72	Therapeutic_or_Preventive_Procedure 656 661	PVI ,
+T73	Laboratory_Procedure 656 661	PVI ,
+T74	Pharmacologic_Substance 665 671	antral
+T75	Organic_Chemical 665 671	antral
+T76	Therapeutic_or_Preventive_Procedure 672 680	ablation
+T77	Spatial_Concept 683 690	outside
+T78	Neoplastic_Process 695 699	PV )
+T79	Functional_Concept 704 715	performed .
+T80	Finding 722 728	single
+T81	Population_Group 722 728	single
+T82	Quantitative_Concept 722 728	single
+T83	Spatial_Concept 729 740	transseptal
+T84	Phenomenon_or_Process 741 749	puncture
+T85	Injury_or_Poisoning 741 749	puncture
+T86	Health_Care_Activity 741 749	puncture
+T87	Conceptual_Entity 762 765	map
+T88	Manufactured_Object 762 765	map
+T89	Laboratory_Procedure 762 765	map
+T90	Body_Part__Organ__or_Organ_Component 773 784	left atrium
+T91	Intellectual_Product 789 797	acquired
+T92	Temporal_Concept 789 797	acquired
+T93	Functional_Concept 798 803	using
+T94	Medical_Device 814 824	catheter .
+T95	Activity 829 839	activation
+T96	Conceptual_Entity 840 843	map
+T97	Manufactured_Object 840 843	map
+T98	Laboratory_Procedure 840 843	map
+T99	Qualitative_Concept 844 852	revealed
+T100	Functional_Concept 871 875	exit
+T101	Spatial_Concept 871 875	exit
+T102	Body_Part__Organ__or_Organ_Component 883 916	left atrium ( LA ) at the roof of
+T103	Body_Part__Organ__or_Organ_Component 926 949	superior pulmonary vein
+T104	Spatial_Concept 967 975	entrance
+T105	Idea_or_Concept 983 989	bottom
+T106	Spatial_Concept 983 989	bottom
+T107	Body_Part__Organ__or_Organ_Component 997 1025	left inferior pulmonary vein
+T108	Food 1037 1042	Fig .
+T109	Spatial_Concept 1050 1057	placing
+T110	Medical_Device 1068 1076	catheter
+T111	Body_Space_or_Junction 1084 1104	ostium of the LSPV ,
+T112	Functional_Concept 1120 1128	sequence
+T113	Nucleotide_Sequence 1120 1128	sequence
+T114	Intellectual_Product 1120 1128	sequence
+T115	Individual_Behavior 1156 1162	Pacing
+T116	Manufactured_Object 1172 1176	roof
+T117	Body_Part__Organ__or_Organ_Component 1184 1188	LSPV
+T118	Animal 1189 1195	showed
+T119	Physiologic_Function 1218 1221	PPI
+T120	Pharmacologic_Substance 1218 1221	PPI
+T121	Idea_or_Concept 1218 1221	PPI
+T122	Gene_or_Genome 1225 1229	ms )
+T123	Enzyme 1225 1229	ms )
+T124	Amino_Acid__Peptide__or_Protein 1225 1229	ms )
+T125	Conceptual_Entity 1225 1229	ms )
+T126	Qualitative_Concept 1236 1243	similar
+T127	Organism_Attribute 1244 1250	p-wave
+T128	Finding 1251 1261	morphology
+T129	Biomedical_Occupation_or_Discipline 1251 1261	morphology
+T130	Qualitative_Concept 1251 1261	morphology
+T131	Spatial_Concept 1251 1261	morphology
+T132	Activity 1262 1270	compared
+T133	Intellectual_Product 1278 1292	tachy-cardia .
+T134	Body_Location_or_Region 1278 1292	tachy-cardia .
+T135	Therapeutic_or_Preventive_Procedure 1293 1301	Ablation
+T136	Body_Location_or_Region 1310 1314	site
+T137	Spatial_Concept 1310 1314	site
+T138	Functional_Concept 1315 1325	terminated
+T139	Idea_or_Concept 1315 1325	terminated
+T140	Functional_Concept 1342 1346	exit
+T141	Spatial_Concept 1342 1346	exit
+T142	Body_Part__Organ__or_Organ_Component 1354 1356	LA
+T143	Functional_Concept 1361 1370	blocked .
+T144	Pathologic_Function 1361 1370	blocked .
+T145	Organ_or_Tissue_Function 1371 1381	Conduction
+T146	Natural_Phenomenon_or_Process 1371 1381	Conduction
+T147	Body_Part__Organ__or_Organ_Component 1391 1411	left pulmonary veins
+T148	Quantitative_Concept 1422 1429	present
+T149	Idea_or_Concept 1422 1429	present
+T150	Spatial_Concept 1445 1448	gap
+T151	Idea_or_Concept 1456 1462	bottom
+T152	Spatial_Concept 1456 1462	bottom
+T153	Food 1479 1484	Fig .
+T154	Eukaryote 1497 1506	ab-lation
+T155	Body_Location_or_Region 1515 1521	site ,
+T156	Spatial_Concept 1515 1521	site ,
+T157	Spatial_Concept 1526 1533	lateral
+T158	Body_Part__Organ__or_Organ_Component 1534 1549	pulmonary veins
+T159	Functional_Concept 1555 1565	isolated .
+T160	Idea_or_Concept 1555 1565	isolated .
+T161	Therapeutic_or_Preventive_Procedure 1570 1585	septal ablation
+T162	Medical_Device 1586 1590	line
+T163	Quantitative_Concept 1586 1590	line
+T164	Substance 1586 1590	line
+T165	Spatial_Concept 1586 1590	line
+T166	Animal 1591 1597	showed
+T167	Spatial_Concept 1598 1602	gaps
+T168	Quantitative_Concept 1627 1633	part ,
+T169	Spatial_Concept 1627 1633	part ,
+T170	Functional_Concept 1658 1666	closed .
+T171	Spatial_Concept 1674 1677	end
+T172	Temporal_Concept 1674 1677	end
+T173	Therapeutic_or_Preventive_Procedure 1685 1694	procedure
+T174	Intellectual_Product 1685 1694	procedure
+T175	Health_Care_Activity 1685 1694	procedure
+T176	Activity 1685 1694	procedure
+T177	Finding 1719 1732	tachycardia .
+T178	Pathologic_Function 1719 1732	tachycardia .
+T179	Spatial_Concept 1737 1743	septal
+T180	Spatial_Concept 1748 1755	lateral
+T181	Gene_or_Genome 1756 1759	PVs
+T182	Functional_Concept 1765 1775	isolated .
+T183	Idea_or_Concept 1765 1775	isolated .
+T184	Clinical_Attribute 1780 1787	patient
+T185	Patient_or_Disabled_Group 1780 1787	patient
+T186	Functional_Concept 1792 1796	free
+T187	Qualitative_Concept 1792 1796	free
+T188	Finding 1804 1815	tachycardia
+T189	Pathologic_Function 1804 1815	tachycardia
+T190	Temporal_Concept 1822 1830	months .
+T191	Idea_or_Concept 1831 1841	Conclusion
+T192	Functional_Concept 1903 1908	using
+T193	Medical_Device 1919 1929	catheter .
+T194	Qualitative_Concept 1930 1940	Successful
+T195	Social_Behavior 1930 1940	Successful
+T196	Therapeutic_or_Preventive_Procedure 1941 1949	ablation
+T197	Functional_Concept 1957 1961	exit
+T198	Spatial_Concept 1957 1961	exit
+T199	Spatial_Concept 1966 1974	entrance
+T200	Body_Location_or_Region 1975 1979	site
+T201	Spatial_Concept 1975 1979	site
+T202	Functional_Concept 1989 1998	performed
+T203	Organism_Function 2007 2013	moving
+T204	Medical_Device 2018 2028	catheter .

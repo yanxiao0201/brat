@@ -1,0 +1,271 @@
+T1	Qualitative_Concept 7 11	last
+T2	Quantitative_Concept 12 21	decades ,
+T3	Quantitative_Concept 22 28	number
+T4	Therapeutic_or_Preventive_Procedure 32 37	drugs
+T5	Pharmacologic_Substance 32 37	drugs
+T6	Finding 43 52	withdrawn
+T7	Intellectual_Product 43 52	withdrawn
+T8	Mental_or_Behavioral_Dysfunction 43 52	withdrawn
+T9	Activity 43 52	withdrawn
+T10	Functional_Concept 53 59	due to
+T11	Functional_Concept 60 65	cases
+T12	Quantitative_Concept 60 65	cases
+T13	Functional_Concept 75 82	leading
+T14	Temporal_Concept 75 82	leading
+T15	Geographic_Area 83 85	to
+T16	Enzyme 83 85	to
+T17	Qualitative_Concept 83 85	to
+T18	Amino_Acid__Peptide__or_Protein 83 85	to
+T19	Research_Activity 96 114	assessment of drug
+T20	Clinical_Attribute 115 128	QT interval .
+T21	Clinical_Attribute 115 128	QT interval .
+T22	Functional_Concept 136 142	case ,
+T23	Medical_Device 136 142	case ,
+T24	Conceptual_Entity 136 142	case ,
+T25	Pharmacologic_Substance 143 154	hydroxyzine
+T26	Organic_Chemical 143 154	hydroxyzine
+T27	Laboratory_or_Test_Result 159 186	identified as the only drug
+T28	Quantitative_Concept 177 181	only
+T29	Intellectual_Product 177 181	only
+T30	Finding 187 191	able
+T31	Organism_Attribute 187 191	able
+T32	Geographic_Area 192 194	to
+T33	Enzyme 192 194	to
+T34	Qualitative_Concept 192 194	to
+T35	Amino_Acid__Peptide__or_Protein 192 194	to
+T36	Functional_Concept 195 201	induce
+T37	Finding 202 227	QTc interval prolongation
+T38	Pathologic_Function 202 227	QTc interval prolongation
+T39	Patient_or_Disabled_Group 235 243	patients
+T40	Functional_Concept 244 250	active
+T41	Idea_or_Concept 244 250	active
+T42	Qualitative_Concept 244 250	active
+T43	Functional_Concept 251 263	medication .
+T44	Pharmacologic_Substance 251 263	medication .
+T45	Injury_or_Poisoning 277 297	hydroxyzine overdose
+T46	Finding 302 310	detected
+T47	Therapeutic_or_Preventive_Procedure 302 310	detected
+T48	Idea_or_Concept 311 319	probably
+T49	Functional_Concept 320 326	due to
+T50	Quantitative_Concept 327 342	high posology ,
+T51	Disease_or_Syndrome 343 367	bile ducts obstruction ,
+T52	Disease_or_Syndrome 372 388	liver impairment
+T53	Enzyme 399 404	GPT )
+T54	Amino_Acid__Peptide__or_Protein 399 404	GPT )
+T55	Pharmacologic_Substance 407 417	Cetirizine
+T56	Organic_Chemical 407 417	Cetirizine
+T57	Pharmacologic_Substance 425 437	hydroxyzines
+T58	Organic_Chemical 425 437	hydroxyzines
+T59	Qualitative_Concept 438 443	major
+T60	Functional_Concept 444 450	active
+T61	Idea_or_Concept 444 450	active
+T62	Qualitative_Concept 444 450	active
+T63	Biologically_Active_Substance 451 463	metabolite ;
+T64	Tissue 484 489	blood
+T65	Body_Substance 484 489	blood
+T66	Geographic_Area 490 495	level
+T67	Qualitative_Concept 490 495	level
+T68	Pharmacologic_Substance 490 495	level
+T69	Classification 490 495	level
+T70	Quantitative_Concept 496 502	dosage
+T71	Functional_Concept 507 510	not
+T72	Functional_Concept 511 522	performed .
+T73	Physical_Object 539 550	combination
+T74	Finding 539 550	combination
+T75	Qualitative_Concept 539 550	combination
+T76	Injury_or_Poisoning 554 574	hydroxyzine overdose
+T77	Population_Group 579 588	transient
+T78	Temporal_Concept 579 588	transient
+T79	Pathologic_Function 589 602	renal failure
+T80	Disease_or_Syndrome 589 602	renal failure
+T81	Functional_Concept 614 618	lead
+T82	Therapeutic_or_Preventive_Procedure 614 618	lead
+T83	Hazardous_or_Poisonous_Substance 614 618	lead
+T84	Inorganic_Chemical 614 618	lead
+T85	Pharmacologic_Substance 614 618	lead
+T86	Element__Ion__or_Isotope 614 618	lead
+T87	Geographic_Area 619 621	to
+T88	Enzyme 619 621	to
+T89	Qualitative_Concept 619 621	to
+T90	Amino_Acid__Peptide__or_Protein 619 621	to
+T91	Pharmacologic_Substance 622 632	cetirizine
+T92	Organic_Chemical 622 632	cetirizine
+T93	Finding 633 647	accumulation .
+T94	Pharmacologic_Substance 658 668	cetirizine
+T95	Organic_Chemical 658 668	cetirizine
+T96	Geographic_Area 675 677	to
+T97	Enzyme 675 677	to
+T98	Qualitative_Concept 675 677	to
+T99	Amino_Acid__Peptide__or_Protein 675 677	to
+T100	Organ_or_Tissue_Function 696 724	ventricular repolarization ,
+T101	Quantitative_Concept 750 756	dose .
+T102	Clinical_Attribute 750 756	dose .
+T103	Quantitative_Concept 764 768	only
+T104	Intellectual_Product 764 768	only
+T105	Quantitative_Concept 769 772	one
+T106	Intellectual_Product 773 782	published
+T107	Occupational_Activity 773 782	published
+T108	Professional_or_Occupational_Group 783 791	clinical
+T109	Qualitative_Concept 783 791	clinical
+T110	Functional_Concept 792 796	case
+T111	Medical_Device 792 796	case
+T112	Conceptual_Entity 792 796	case
+T113	Pharmacologic_Substance 800 819	hydroxyzine-induced
+T114	Organic_Chemical 800 819	hydroxyzine-induced
+T115	Functional_Concept 800 819	hydroxyzine-induced
+T116	Finding 820 837	QT prolongation .
+T117	Functional_Concept 843 847	case
+T118	Medical_Device 843 847	case
+T119	Conceptual_Entity 843 847	case
+T120	Temporal_Concept 858 867	recurrent
+T121	Amphibian 868 875	syncope
+T122	Sign_or_Symptom 868 875	syncope
+T123	Pharmacologic_Substance 883 894	hydroxyzine
+T124	Organic_Chemical 883 894	hydroxyzine
+T125	Functional_Concept 895 904	treatment
+T126	Research_Activity 895 904	treatment
+T127	Therapeutic_or_Preventive_Procedure 895 904	treatment
+T128	Conceptual_Entity 895 904	treatment
+T129	Health_Care_Activity 895 904	treatment
+T130	Qualitative_Concept 908 913	usual
+T131	Quantitative_Concept 914 922	posology
+T132	Quantitative_Concept 914 922	posology
+T133	Clinical_Attribute 914 922	posology
+T134	Temporal_Concept 928 939	34-year-old
+T135	Temporal_Concept 928 939	34-year-old
+T136	Population_Group 940 945	woman
+T137	Idea_or_Concept 946 956	presenting
+T138	Gene_or_Genome 959 963	hERG
+T139	Genetic_Function 964 974	mutation .
+T140	Cell_or_Molecular_Dysfunction 964 974	mutation .
+T141	Gene_or_Genome 975 979	hERG
+T142	Gene_or_Genome 980 984	gene
+T143	Intellectual_Product 985 990	codes
+T144	Occupational_Activity 985 990	codes
+T145	Classification 985 990	codes
+T146	Quantitative_Concept 999 1006	subunit
+T147	Amino_Acid__Peptide__or_Protein 999 1006	subunit
+T148	Amino_Acid__Peptide__or_Protein 1012 1029	potassium channel
+T149	Biologically_Active_Substance 1012 1029	potassium channel
+T150	Inorganic_Chemical 1032 1033	I
+T151	Amino_Acid__Peptide__or_Protein 1032 1033	I
+T152	Immunologic_Factor 1032 1033	I
+T153	Geographic_Area 1034 1036	Kr
+T154	Organ_or_Tissue_Function 1057 1085	ventricular repolarization .
+T155	Animal 1110 1115	shown
+T156	Pharmacologic_Substance 1121 1132	hydroxyzine
+T157	Organic_Chemical 1121 1132	hydroxyzine
+T158	Functional_Concept 1159 1167	blocking
+T159	Mental_or_Behavioral_Dysfunction 1159 1167	blocking
+T160	Gene_or_Genome 1168 1172	hERG
+T161	Conceptual_Entity 1173 1181	channels
+T162	Spatial_Concept 1173 1181	channels
+T163	Cell_Function 1207 1223	action potential
+T164	Pharmacologic_Substance 1224 1234	duration ,
+T165	Temporal_Concept 1224 1234	duration ,
+T166	Functional_Concept 1240 1248	inducing
+T167	Quantitative_Concept 1262 1268	French
+T168	Population_Group 1262 1268	French
+T169	Language 1262 1268	French
+T170	Research_Activity 1269 1286	pharmacovigilance
+T171	Intellectual_Product 1287 1297	database ,
+T172	Intellectual_Product 1287 1297	database ,
+T173	Quantitative_Concept 1301 1306	found
+T174	Functional_Concept 1310 1315	cases
+T175	Quantitative_Concept 1310 1315	cases
+T176	Finding 1319 1334	QT prolongation
+T177	Pharmacologic_Substance 1346 1357	hydroxyzine
+T178	Organic_Chemical 1346 1357	hydroxyzine
+T179	Idea_or_Concept 1365 1374	suspected
+T180	Qualitative_Concept 1365 1374	suspected
+T181	Idea_or_Concept 1375 1389	accountability
+T182	Intellectual_Product 1390 1397	assumed
+T183	Occupational_Activity 1414 1421	publish
+T184	Quantitative_Concept 1431 1436	first
+T185	Qualitative_Concept 1431 1436	first
+T186	Professional_or_Occupational_Group 1437 1445	clinical
+T187	Qualitative_Concept 1437 1445	clinical
+T188	Functional_Concept 1446 1450	case
+T189	Medical_Device 1446 1450	case
+T190	Conceptual_Entity 1446 1450	case
+T191	Finding 1476 1491	QT prolongation
+T192	Quantitative_Concept 1497 1508	drug dosage
+T193	Medical_Device 1509 1515	data .
+T194	Idea_or_Concept 1509 1515	data .
+T195	Eukaryote 1509 1515	data .
+T196	Mental_Process 1520 1531	association
+T197	Phenomenon_or_Process 1520 1531	association
+T198	Qualitative_Concept 1520 1531	association
+T199	Social_Behavior 1520 1531	association
+T200	Pharmacologic_Substance 1535 1548	hydroxyzine ,
+T201	Organic_Chemical 1535 1548	hydroxyzine ,
+T202	Quantitative_Concept 1563 1578	high posology ,
+T203	Finding 1583 1589	others
+T204	Pharmacologic_Substance 1583 1589	others
+T205	Qualitative_Concept 1598 1608	well-known
+T206	Manufactured_Object 1598 1608	well-known
+T207	Qualitative_Concept 1598 1608	well-known
+T208	Idea_or_Concept 1613 1618	risks
+T209	Functional_Concept 1619 1626	factors
+T210	Conceptual_Entity 1619 1626	factors
+T211	Functional_Concept 1629 1638	including
+T212	Finding 1639 1650	hypokalemia
+T213	Finding 1655 1668	bradycardia )
+T214	Pathologic_Function 1655 1668	bradycardia )
+T215	Functional_Concept 1675 1681	induce
+T216	Finding 1682 1697	QT prolongation
+T217	Finding 1702 1717	lifethreatening
+T218	Idea_or_Concept 1702 1717	lifethreatening
+T219	Quantitative_Concept 1728 1735	present
+T220	Idea_or_Concept 1728 1735	present
+T221	Occupational_Activity 1736 1740	work
+T222	Temporal_Concept 1756 1762	recent
+T223	Functional_Concept 1763 1771	addition
+T224	Pharmacologic_Substance 1775 1786	hydroxyzine
+T225	Organic_Chemical 1775 1786	hydroxyzine
+T226	Intellectual_Product 1794 1807	list of drugs
+T227	Functional_Concept 1813 1824	conditional
+T228	Qualitative_Concept 1813 1824	conditional
+T229	Idea_or_Concept 1825 1829	risk
+T230	Therapeutic_or_Preventive_Procedure 1841 1846	drugs
+T231	Pharmacologic_Substance 1841 1846	drugs
+T232	Geographic_Area 1847 1849	to
+T233	Enzyme 1847 1849	to
+T234	Qualitative_Concept 1847 1849	to
+T235	Amino_Acid__Peptide__or_Protein 1847 1849	to
+T236	Patient_or_Disabled_Group 1864 1872	patients
+T237	Disease_or_Syndrome 1878 1907	congenital long QT syndrome .
+T238	Therapeutic_or_Preventive_Procedure 1916 1923	reminds
+T239	Idea_or_Concept 1929 1940	recommended
+T240	Clinical_Attribute 1941 1962	hydroxyzines posology
+T241	Social_Behavior 1971 1982	respected ,
+T242	Idea_or_Concept 1987 1991	risk
+T243	Finding 1995 2010	QT prolongation
+T244	Amphibian 2015 2022	syncope
+T245	Sign_or_Symptom 2015 2022	syncope
+T246	Quantitative_Concept 2023 2032	increases
+T247	Functional_Concept 2023 2032	increases
+T248	Functional_Concept 2049 2053	case
+T249	Medical_Device 2049 2053	case
+T250	Conceptual_Entity 2049 2053	case
+T251	Finding 2060 2070	overdose .
+T252	Idea_or_Concept 2060 2070	overdose .
+T253	Injury_or_Poisoning 2060 2070	overdose .
+T254	Idea_or_Concept 2081 2092	considering
+T255	Quantitative_Concept 2097 2102	large
+T256	Functional_Concept 2103 2109	use of
+T257	Substance 2114 2124	molecule ,
+T258	Pathologic_Function 2129 2139	recurrence
+T259	Neoplastic_Process 2129 2139	recurrence
+T260	Phenomenon_or_Process 2129 2139	recurrence
+T261	Pharmacologic_Substance 2143 2162	hydroxyzine-induced
+T262	Organic_Chemical 2143 2162	hydroxyzine-induced
+T263	Functional_Concept 2143 2162	hydroxyzine-induced
+T264	Finding 2163 2178	QT prolongation
+T265	Idea_or_Concept 2182 2190	probably
+T266	Idea_or_Concept 2208 2219	Information
+T267	Functional_Concept 2228 2233	given
+T268	Idea_or_Concept 2228 2233	given
+T269	Intellectual_Product 2228 2233	given
+T270	Conceptual_Entity 2228 2233	given
+T271	Professional_or_Occupational_Group 2237 2248	clinician .

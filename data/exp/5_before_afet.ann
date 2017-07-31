@@ -1,0 +1,24 @@
+T1	Intellectual_Product 5 11	report
+T2	Health_Care_Activity 5 11	report
+T3	Intellectual_Product 16 22	images
+T4	Entity 16 22	images
+T5	Functional_Concept 34 38	case
+T6	Medical_Device 34 38	case
+T7	Conceptual_Entity 34 38	case
+T8	Laboratory_or_Test_Result 42 56	atrial flutter
+T9	Pathologic_Function 42 56	atrial flutter
+T10	Quantitative_Concept 62 65	2:1
+T11	Finding 62 65	2:1
+T12	Classification 62 65	2:1
+T13	Age_Group 62 100	2:1 conduction pattern in a 3 year-old
+T14	Laboratory_or_Test_Result 66 84	conduction pattern
+T15	Organism_Attribute 101 105	male
+T16	Qualitative_Concept 101 105	male
+T17	Disease_or_Syndrome 111 118	d-TGA ,
+T18	Mental_or_Behavioral_Dysfunction 119 124	ASD ,
+T19	Congenital_Abnormality 119 124	ASD ,
+T20	Anatomical_Abnormality 129 132	VSD
+T21	Temporal_Concept 133 144	status-post
+T22	Therapeutic_or_Preventive_Procedure 145 153	repair ,
+T23	Organism_Function 145 153	repair ,
+T24	Diagnostic_Procedure 180 205	M-mode echocardiography .

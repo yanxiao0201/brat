@@ -1,0 +1,101 @@
+T1	Temporal_Concept 2 13	54-year-old
+T2	Temporal_Concept 2 13	54-year-old
+T3	Population_Group 14 19	woman
+T4	Idea_or_Concept 20 29	presented
+T5	Disease_or_Syndrome 35 40	giant
+T6	Pathologic_Function 41 49	struma ,
+T7	Disease_or_Syndrome 50 65	hyperthyroidism
+T8	Qualitative_Concept 69 76	unknown
+T9	Pharmacologic_Substance 77 87	duration ,
+T10	Temporal_Concept 77 87	duration ,
+T11	Finding 88 100	palpitations
+T12	Sign_or_Symptom 105 115	dyspnoea .
+T13	Diagnostic_Procedure 120 123	ECG
+T14	Animal 124 130	showed
+T15	Finding 131 142	tachycardia
+T16	Pathologic_Function 131 142	tachycardia
+T17	Finding 143 164	atrial fibrillation .
+T18	Laboratory_or_Test_Result 143 164	atrial fibrillation .
+T19	Disease_or_Syndrome 143 164	atrial fibrillation .
+T20	Diagnostic_Procedure 165 181	Echocardiography
+T21	Qualitative_Concept 182 190	revealed
+T22	Congenital_Abnormality 191 225	dilatation of the left ventricle ,
+T23	Qualitative_Concept 226 232	highly
+T24	Qualitative_Concept 233 240	reduced
+T25	Temporal_Concept 241 249	systolic
+T26	Functional_Concept 250 258	function
+T27	Physiologic_Function 250 258	function
+T28	Intellectual_Product 250 258	function
+T29	Classification 250 258	function
+T30	Qualitative_Concept 263 270	diffuse
+T31	Sign_or_Symptom 271 284	hypokinesia .
+T32	Laboratory_Procedure 285 333	Serum thyroid stimulating hormone ( TSH ) levels
+T33	Quantitative_Concept 339 348	less than
+T34	Finding 349 353	0.03
+T35	Quantitative_Concept 354 359	lU/ml
+T36	Functional_Concept 362 375	physiological
+T37	Quantitative_Concept 376 381	range
+T38	Intellectual_Product 376 381	range
+T39	Hormone 402 423	free triiodothyronine
+T40	Amino_Acid__Peptide__or_Protein 402 423	free triiodothyronine
+T41	Laboratory_Procedure 402 423	free triiodothyronine
+T42	Quantitative_Concept 426 431	fT3 )
+T43	Quantitative_Concept 441 446	pg/ml
+T44	Quantitative_Concept 449 457	2.304.20
+T45	Finding 449 457	2.304.20
+T46	Classification 449 457	2.304.20
+T47	Finding 449 457	2.304.20
+T48	Hormone 470 484	free thyroxine
+T49	Laboratory_Procedure 470 484	free thyroxine
+T50	Amino_Acid__Peptide__or_Protein 470 484	free thyroxine
+T51	Quantitative_Concept 493 501	amounted
+T52	Food 505 510	Fig .
+T53	Quantitative_Concept 511 512	1
+T54	Finding 511 512	1
+T55	Classification 511 512	1
+T56	Diagnostic_Procedure 513 529	Turbo field-echo
+T57	Cell_or_Molecular_Dysfunction 538 547	inversion
+T58	Spatial_Concept 538 547	inversion
+T59	Anatomical_Abnormality 538 547	inversion
+T60	Quantitative_Concept 548 556	recovery
+T61	Organism_Function 548 556	recovery
+T62	Activity 548 556	recovery
+T63	Functional_Concept 564 573	sequences
+T64	Nucleotide_Sequence 564 573	sequences
+T65	Intellectual_Product 564 573	sequences
+T66	Nucleotide_Sequence 564 573	sequences
+T67	Spatial_Concept 577 585	vertical
+T68	Spatial_Concept 596 606	horizontal
+T69	Spatial_Concept 613 622	long axis
+T70	Temporal_Concept 623 629	10 min
+T71	Therapeutic_or_Preventive_Procedure 636 696	intravenous gadolinium-based contrast agent administration :
+T72	Spatial_Concept 636 696	intravenous gadolinium-based contrast agent administration :
+T73	Indicator__Reagent__or_Diagnostic_Aid 648 679	gadolinium-based contrast agent
+T74	Qualitative_Concept 701 708	healthy
+T75	Spatial_Concept 709 714	basal
+T76	Tissue 734 744	myocardium
+T77	Animal 745 750	shows
+T78	Temporal_Concept 754 763	prolonged
+T79	Indicator__Reagent__or_Diagnostic_Aid 764 774	gadolinium
+T80	Element__Ion__or_Isotope 764 774	gadolinium
+T81	Functional_Concept 775 784	retention
+T82	Cell_Function 775 784	retention
+T83	Mental_Process 775 784	retention
+T84	Population_Group 804 809	black
+T85	Qualitative_Concept 804 809	black
+T86	Plant 812 824	arrowheads )
+T87	Functional_Concept 839 849	transmural
+T88	Finding 850 854	scar
+T89	Pathologic_Function 850 854	scar
+T90	Spatial_Concept 862 868	apical
+T91	Spatial_Concept 869 877	segments
+T92	Functional_Concept 878 885	retains
+T93	Finding 911 917	bright
+T94	Gene_or_Genome 911 917	bright
+T95	Organism_Attribute 918 928	appearance
+T96	Qualitative_Concept 918 928	appearance
+T97	Manufactured_Object 931 939	arrows )
+T98	Finding 952 959	finding
+T99	Sign_or_Symptom 952 959	finding
+T100	Disease_or_Syndrome 963 990	bilateral pleural effusions
+T101	Conceptual_Entity 993 1003	asterisk )
