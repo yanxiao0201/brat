@@ -14,7 +14,7 @@ e.g. multiple case reports in one document.
 If a document name is not in STARTS, assume one sub-document.
 '''
 
-COLLECTION = 'data/acrobat'
+COLLECTION = 'data/acrobat_yba'
 STARTS = {'example': [0, 634, 2030]} # 3 sub-documents in example.txt
 
 
@@ -134,7 +134,7 @@ class Graph:
         for i, s in enumerate(ss):
             s += '}'
             # print s
-            fn = 'graph/%s_%s' % (doc, i)
+            fn = 'graph/%s/%s_%s' % (COLLECTION, doc, i)
             with open('%s.txt' % fn, "w") as f:
                 f.write(s)
             os.system('dot -x -Goverlap=scale -Tpng %s.txt > %s.png' % (fn, fn))
@@ -170,7 +170,6 @@ class Graph:
             c1 = self.get_node_cluster_id(node)
             c2 = self.get_node_cluster_id(next_node)
             if c1:
-                print ''
                 li.append('ltail=' + c1)
             if c2:
                 li.append('lhead=' + c2)
@@ -178,7 +177,8 @@ class Graph:
 
 
 def main():
-    os.system('rm -rf graph/*')
+    os.system('rm -rf graph/%s/* && mkdir -p graph/%s' % \
+        (COLLECTION, COLLECTION))
     for file in glob.glob(os.path.join(COLLECTION, '*.ann')):
         doc = file.split('/')[-1].split('.')[0]
         graph = brat_to_graph(file)
