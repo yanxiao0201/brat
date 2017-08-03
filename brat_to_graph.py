@@ -131,10 +131,9 @@ class Graph:
             ss[self.get_doc_idx(node, doc)] += s # update one string in ss
         # Output the dot language strings to files.
         # Use them and graphviz to generate the final images.
-        os.system('rm -rf graph/*')
         for i, s in enumerate(ss):
             s += '}'
-            print s
+            # print s
             fn = 'graph/%s_%s' % (doc, i)
             with open('%s.txt' % fn, "w") as f:
                 f.write(s)
@@ -179,6 +178,7 @@ class Graph:
 
 
 def main():
+    os.system('rm -rf graph/*')
     for file in glob.glob(os.path.join(COLLECTION, '*.ann')):
         doc = file.split('/')[-1].split('.')[0]
         graph = brat_to_graph(file)
