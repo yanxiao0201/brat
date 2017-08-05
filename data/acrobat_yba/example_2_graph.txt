@@ -1,0 +1,220 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T74 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">74-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T75 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">drug-refractory paroxys-mal atrial flutter</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T76 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">circumferential pulmonary venous isolation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T76 -> T75 [label=BEFORE, lhead=cluster_11];
+  T76 -> T78 [label=BEFORE];
+  T77 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">referred</FONT></B><br/>(Activity)>,
+     shape=box];
+  T77 -> T79 [label=BEFORE, ltail=cluster_11, lhead=cluster_6];
+  T77 -> T110 [label=BEFORE, ltail=cluster_11];
+  T78 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">2 years</FONT></B><br/>(Duration)>,
+     shape=box];
+  T78 -> T75 [label=BEFORE, lhead=cluster_11];
+  T79 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T80 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">clinical arrhythmia</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T80 -> T81 [label=BEFORE, ltail=cluster_6];
+  T81 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Mapping</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T81 -> T83 [label=BEFORE];
+  T82 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left atrium</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T82 -> T81 [label=MODIFIER, color=gray];
+  T83 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">tachycardia cycle length</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T83 -> T85 [label=BEFORE];
+  T84 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">entire</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T84 -> T83 [label=MODIFIER, color=gray];
+  T85 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">fractionated bipolar electrograms</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T85 -> T93 [label=BEFORE, lhead=cluster_7];
+  T86 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">fractionated</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T86 -> T85 [label=MODIFIER, color=gray];
+  T87 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">bipolar</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T87 -> T85 [label=MODIFIER, color=gray];
+  T88 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">anterolateral left atrial (LA) wall</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T88 -> T85 [label=MODIFIER, color=gray];
+  T89 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">anterolateral</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T89 -> T88 [label=MODIFIER, color=gray];
+  T90 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T90 -> T91 [label=MODIFIER, color=gray];
+  T91 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">atrial</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T91 -> T88 [label=MODIFIER, color=gray];
+  T92 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left atrial</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T92 -> T88 [label=MODIFIER, color=gray];
+  T93 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">concealed entrainment</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T94 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">postpacing interval</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T95 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">tachycardia cycle length</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T95 -> T96 [label=BEFORE, ltail=cluster_7, lhead=cluster_8];
+  T96 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">linear ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T97 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">mitral annulus</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T97 -> T96 [label=MODIFIER, color=gray];
+  T98 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">fractionated electrograms</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T99 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">scar</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T100 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left superior pulmonary vein</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T100 -> T99 [label=MODIFIER, color=gray];
+  T101 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">irrigated tip catheter</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T101 -> T104 [label=BEFORE, ltail=cluster_8];
+  T102 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">35 W</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T102 -> T101 [label=MODIFIER, color=gray];
+  T103 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">40 oC</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T103 -> T101 [label=MODIFIER, color=gray];
+  T104 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">atrial flutter</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T104 -> T105 [label=BEFORE, lhead=cluster_9];
+  T105 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">sinus nodal (SN) arrest</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T106 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">urgent temporary pacing</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T106 -> T108 [label=BEFORE, ltail=cluster_9];
+  T107 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">recovery of SN function</FONT></B><br/>(Sign_symptom)<br/>(NEG)>,
+     shape=box];
+  T108 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">3 days</FONT></B><br/>(Duration)>,
+     shape=box];
+  T108 -> T107 [label=BEFORE, lhead=cluster_10];
+  T109 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">permanent pacemaker</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T110 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">cardiac computed tomography (CT)</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T110 -> T111 [label=BEFORE, lhead=cluster_6];
+  T111 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">abla-tion</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T111 -> T123 [label=BEFORE, ltail=cluster_6];
+  T112 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">small blood vessel</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T112 -> T123 [label=MODIFIER, color=gray];
+  T113 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">small</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T113 -> T112 [label=MODIFIER, color=gray];
+  T114 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left circumflex artery</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T114 -> T112 [label=MODIFIER, color=gray];
+  T115 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">anterior LA wall</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T115 -> T112 [label=MODIFIER, color=gray];
+  T116 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">cavoatrial junction of the right atrium</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T116 -> T112 [label=MODIFIER, color=gray];
+  T117 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">3-dimensional reconstruction image</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T118 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left-sided SN artery</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T118 -> T117 [label=MODIFIER, color=gray];
+  T119 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left-sided</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T119 -> T118 [label=MODIFIER, color=gray];
+  T120 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">SN</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T120 -> T118 [label=MODIFIER, color=gray];
+  T123 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">review</FONT></B><br/>(Activity)>,
+     shape=box];
+  T123 -> T117 [label=BEFORE];
+  subgraph cluster_6 {
+    T79;
+    T80;
+    T111;
+    color=lightskyblue;
+  }
+  subgraph cluster_7 {
+    T93;
+    T94;
+    T95;
+    color=lightskyblue;
+  }
+  subgraph cluster_8 {
+    T96;
+    T98;
+    T99;
+    T101;
+    color=lightskyblue;
+  }
+  subgraph cluster_9 {
+    T105;
+    T106;
+    color=lightskyblue;
+  }
+  subgraph cluster_10 {
+    T107;
+    T109;
+    color=lightskyblue;
+  }
+  subgraph cluster_11 {
+    T75;
+    T77;
+    color=lightskyblue;
+  }
+}

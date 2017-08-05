@@ -4,13 +4,13 @@ T3	Sign_symptom 19 31	hypertensive
 T4	Ethnicity 32 41	Caucasian
 T5	Therapeutic_procedure 61 78	medical treatment
 T7	Disease_disorder 98 112	non-organic AF
-T6	Duration 79 93	for 1.5 months
+T6	Duration 83 93	1.5 months
 T8	Activity 117 125	admitted
 T9	Disease_disorder 148 176	high-ventricular response AF
 T10	Quantitative_concept 178 192	170 per minute
 R1	MODIFIER Arg1:T10 Arg2:T9	
 T11	Sign_symptom 199 211	sinus rhythm
-T12	Frequency 260 286	two times every second day
+T12	Quantitative_concept 260 286	two times every second day
 T13	Diagnostic_procedure 307 317	apnea test
 T14	Time 346 356	same night
 T15	Sign_symptom 394 414	apnea-hypopnea index
@@ -32,12 +32,8 @@ T26	Therapeutic_procedure 584 601	medical treatment
 T27	Therapeutic_procedure 606 631	nocturnal BiPAP treatment
 *	OVERLAP T6 T5 T7 T3
 R6	BEFORE Arg1:T7 Arg2:T8	
-*	OVERLAP T8 T9 T11 T28 T12
 T28	Diagnostic_procedure 238 240	CV
-R8	BEFORE Arg1:T28 Arg2:T13	
-*	OVERLAP T13 T14
-R9	BEFORE Arg1:T13 Arg2:T15	
-*	OVERLAP T18 T19 T21 T22 T17 T15
+*	OVERLAP T8 T9
 R10	MODIFIER Arg1:T16 Arg2:T17	
 R11	BEFORE Arg1:T22 Arg2:T25	
 *	OVERLAP T25 T26 T27
@@ -65,7 +61,7 @@ T39	Disease_disorder 837 873	zygomaticomaxillary complex fracture
 E8	Disease_disorder:T39 
 T40	Disease_disorder 882 904	orbital floor fracture
 E9	Disease_disorder:T40 
-*	OVERLAP E9 E8 E7 E6 E4 E3
+*	OVERLAP E9 E8 E7 E6 E4 E3 E5
 T41	Diagnostic_procedure 906 941	Examination of extraocular motility
 E10	Diagnostic_procedure:T41 
 T42	Anatomical_structure 921 932	extraocular
@@ -86,4 +82,201 @@ R17	DECREASE_TO Arg1:E1 Arg2:T47
 T49	Qualitative_concept 1141 1157	attempted upgaze
 R18	MODIFIER Arg1:T49 Arg2:T47	
 R19	BEFORE Arg1:E9 Arg2:E10	
-*	OVERLAP E10 E11 E12 E1
+T50	Disease_disorder 1163 1174	bradycardia
+E13	Disease_disorder:T50 
+T51	Disease_disorder 1246 1257	bradycardia
+E14	Disease_disorder:T51 
+A2	TREND E14 DEC
+T52	Sign_symptom 1283 1299	sustained upgaze
+E15	Sign_symptom:T52 
+T53	Quantitative_concept 1310 1329	50 beats per minute
+R20	MODIFIER Arg1:T53 Arg2:E15	
+T54	Sign_symptom 1204 1226	return to primary gaze
+E16	Sign_symptom:T54 
+R21	AFTER Arg1:E13 Arg2:E16	
+T55	Sign_symptom 1390 1407	syncopal symptoms
+E17	Sign_symptom:T55 
+A3	POLARITY E17 NEG
+T56	Disease_disorder 1419 1430	bradycardia
+E18	Disease_disorder:T56 
+T57	Disease_disorder 1472 1480	vomiting
+E19	Disease_disorder:T57 
+T58	Quantitative_concept 1448 1468	3 witnessed episodes
+R23	MODIFIER Arg1:T58 Arg2:E19	
+T59	Diagnostic_procedure 1517 1541	The rest of the eye exam
+E20	Diagnostic_procedure:T59 
+A4	POLARITY E20 NEG
+T60	Disease_disorder 1591 1602	bradycardia
+E21	Disease_disorder:T60 
+T61	Disease_disorder 1618 1651	inferior rectus muscle entrapment
+E22	Disease_disorder:T61 
+*	OVERLAP E21 E22 E18 E19 E20 E17 E1
+A5	POLARITY E22 MAYBE_POS
+T62	Diagnostic_procedure 1664 1685	CT of the head/orbits
+E23	Diagnostic_procedure:T62 
+T63	Anatomical_structure 1674 1685	head/orbits
+R24	MODIFIER Arg1:T63 Arg2:E23	
+R25	BEFORE Arg1:E22 Arg2:E23	
+T64	Disease_disorder 1702 1733	prolapse of the inferior rectus
+E24	Disease_disorder:T64 
+A6	POLARITY E24 NEG
+T66	Qualitative_concept 1760 1772	small amount
+T65	Sign_symptom 1776 1787	soft tissue
+E25	Sign_symptom:T65 
+R26	MODIFIER Arg1:T66 Arg2:E25	
+T67	Anatomical_structure 1814 1824	adventitia
+T68	Anatomical_structure 1841 1856	inferior rectus
+T69	Anatomical_structure 1882 1904	orbital floor fracture
+R28	MODIFIER Arg1:T69 Arg2:T68	
+R27	MODIFIER Arg1:T68 Arg2:T67	
+R29	MODIFIER Arg1:T67 Arg2:E25	
+T70	Anatomical_structure 1910 1929	orbital floor bones
+T71	Disease_disorder 1966 1981	linear fracture
+E26	Disease_disorder:T71 
+T72	Disease_disorder 2001 2018	trapdoor fracture
+E27	Disease_disorder:T72 
+T73	Disease_disorder 1910 1953	orbital floor bones were also non-displaced
+E28	Disease_disorder:T73 
+R30	MODIFIER Arg1:T70 Arg2:E28	
+*	OVERLAP E28 E26 E27 E25 E24
+T74	Age 2030 2041	74-year-old
+T75	Disease_disorder 2054 2096	drug-refractory paroxys-mal atrial flutter
+E29	Disease_disorder:T75 
+T76	Therapeutic_procedure 2111 2153	circumferential pulmonary venous isolation
+E30	Therapeutic_procedure:T76 
+R31	AFTER Arg1:E29 Arg2:E30	
+T77	Activity 2158 2166	referred
+E31	Activity:T77 
+R32	BEFORE Arg1:E2 Arg2:E10	
+T78	Duration 2097 2104	2 years
+E32	Duration:T78 
+R33	AFTER Arg1:E32 Arg2:E30	
+T79	Therapeutic_procedure 2200 2208	ablation
+E33	Therapeutic_procedure:T79 
+T80	Sign_symptom 2210 2229	clinical arrhythmia
+E34	Sign_symptom:T80 
+T81	Diagnostic_procedure 2243 2250	Mapping
+E35	Diagnostic_procedure:T81 
+T82	Anatomical_structure 2258 2269	left atrium
+R34	MODIFIER Arg1:T82 Arg2:E35	
+T83	Sign_symptom 2290 2314	tachycardia cycle length
+E36	Sign_symptom:T83 
+T84	Qualitative_concept 2283 2289	entire
+R35	MODIFIER Arg1:T84 Arg2:E36	
+R36	BEFORE Arg1:E31 Arg2:E33	
+R38	BEFORE Arg1:E34 Arg2:E35	
+*	OVERLAP E33 E34 E52
+T85	Diagnostic_procedure 2326 2359	fractionated bipolar electrograms
+E37	Diagnostic_procedure:T85 
+T86	Qualitative_concept 2326 2338	fractionated
+T87	Qualitative_concept 2339 2346	bipolar
+R37	MODIFIER Arg1:T86 Arg2:E37	
+R39	MODIFIER Arg1:T87 Arg2:E37	
+T88	Anatomical_structure 2363 2398	anterolateral left atrial (LA) wall
+T89	Qualitative_concept 2363 2376	anterolateral
+T90	Qualitative_concept 2377 2381	left
+T91	Anatomical_structure 2382 2388	atrial
+R40	MODIFIER Arg1:T90 Arg2:T91	
+T92	Qualitative_concept 2377 2388	left atrial
+R41	MODIFIER Arg1:T92 Arg2:T88	
+R42	MODIFIER Arg1:T89 Arg2:T88	
+R43	MODIFIER Arg1:T88 Arg2:E37	
+T93	Sign_symptom 2412 2433	concealed entrainment
+E38	Sign_symptom:T93 
+T94	Sign_symptom 2439 2458	postpacing interval
+E39	Sign_symptom:T94 
+T95	Sign_symptom 2475 2499	tachycardia cycle length
+E40	Sign_symptom:T95 
+R44	BEFORE Arg1:E36 Arg2:E37	
+T96	Therapeutic_procedure 2508 2523	linear ablation
+E41	Therapeutic_procedure:T96 
+T97	Anatomical_structure 2529 2543	mitral annulus
+T98	Diagnostic_procedure 2550 2575	fractionated electrograms
+E42	Diagnostic_procedure:T98 
+T99	Disease_disorder 2583 2587	scar
+E43	Disease_disorder:T99 
+T100	Anatomical_structure 2593 2621	left superior pulmonary vein
+R45	MODIFIER Arg1:T100 Arg2:E43	
+R46	MODIFIER Arg1:T97 Arg2:E41	
+*	OVERLAP E39 E40 E38
+R47	BEFORE Arg1:E40 Arg2:E41	
+*	OVERLAP E41 E42 E43 E44
+T101	Therapeutic_procedure 2631 2653	irrigated tip catheter
+E44	Therapeutic_procedure:T101 
+T102	Quantitative_concept 2662 2666	35 W
+T103	Quantitative_concept 2681 2686	40 oC
+R48	MODIFIER Arg1:T102 Arg2:E44	
+R49	MODIFIER Arg1:T103 Arg2:E44	
+T104	Disease_disorder 2689 2703	atrial flutter
+E45	Disease_disorder:T104 
+A7	POLARITY E45 NEG
+R50	BEFORE Arg1:E44 Arg2:E45	
+T105	Disease_disorder 2738 2761	sinus nodal (SN) arrest
+E46	Disease_disorder:T105 
+R51	BEFORE Arg1:E45 Arg2:E46	
+T106	Therapeutic_procedure 2772 2795	urgent temporary pacing
+E47	Therapeutic_procedure:T106 
+*	OVERLAP E46 E47
+T107	Sign_symptom 2810 2833	recovery of SN function
+E48	Sign_symptom:T107 
+A8	POLARITY E48 NEG
+T108	Duration 2840 2846	3 days
+E49	Duration:T108 
+R52	BEFORE Arg1:E47 Arg2:E49	
+T109	Therapeutic_procedure 2854 2873	permanent pacemaker
+E50	Therapeutic_procedure:T109 
+T110	Diagnostic_procedure 2901 2933	cardiac computed tomography (CT)
+E51	Diagnostic_procedure:T110 
+T111	Therapeutic_procedure 2941 2950	abla-tion
+E52	Therapeutic_procedure:T111 
+R55	BEFORE Arg1:E51 Arg2:E52	
+R53	BEFORE Arg1:E31 Arg2:E51	
+T112	Anatomical_structure 2962 2980	small blood vessel
+T113	Qualitative_concept 2962 2967	small
+R54	MODIFIER Arg1:T113 Arg2:T112	
+T114	Anatomical_structure 3002 3024	left circumflex artery
+T115	Anatomical_structure 3044 3060	anterior LA wall
+T116	Anatomical_structure 3074 3113	cavoatrial junction of the right atrium
+R57	MODIFIER Arg1:T114 Arg2:T112	
+R58	MODIFIER Arg1:T116 Arg2:T112	
+T117	Diagnostic_procedure 3156 3190	3-dimensional reconstruction image
+E53	Diagnostic_procedure:T117 
+T118	Anatomical_structure 3214 3234	left-sided SN artery
+T119	Qualitative_concept 3214 3224	left-sided
+T120	Qualitative_concept 3225 3227	SN
+R59	MODIFIER Arg1:T119 Arg2:T118	
+R60	MODIFIER Arg1:T120 Arg2:T118	
+R61	MODIFIER Arg1:T118 Arg2:E53	
+R63	MODIFIER Arg1:T115 Arg2:T112	
+R64	MODIFIER Arg1:T91 Arg2:T88	
+R65	AFTER Arg1:E29 Arg2:E32	
+R66	AFTER Arg1:E48 Arg2:E49	
+*	OVERLAP E48 E50
+*	OVERLAP E29 E31
+R67	MODIFIER Arg1:T12 Arg2:T28	
+T121	Diagnostic_procedure 367 376	second CV
+E54	Diagnostic_procedure:T121 
+R8	BEFORE Arg1:T28 Arg2:E54	
+R68	AFTER Arg1:T14 Arg2:E54	
+*	OVERLAP T11 T28
+R69	BEFORE Arg1:T8 Arg2:T11	
+*	OVERLAP T13 T14
+R9	BEFORE Arg1:T13 Arg2:T15	
+R70	BEFORE Arg1:E10 Arg2:E11	
+R71	BEFORE Arg1:E11 Arg2:E12	
+R72	BEFORE Arg1:E12 Arg2:E1	
+R74	BEFORE Arg1:E23 Arg2:E24	
+*	OVERLAP T15 T17 T18 T19 T21 T22
+T122	Duration 1336 1360	approximately 20 seconds
+E55	Duration:T122 
+R75	AFTER Arg1:E14 Arg2:E55	
+*	OVERLAP E14 E15
+R22	BEFORE Arg1:E1 Arg2:E55	
+R73	BEFORE Arg1:E1 Arg2:E16	
+R76	BEFORE Arg1:E35 Arg2:E36	
+R77	BEFORE Arg1:E37 Arg2:E38	
+T123	Activity 2891 2897	review
+E56	Activity:T123 
+R78	AFTER Arg1:E56 Arg2:E52	
+R62	MODIFIER Arg1:T112 Arg2:E56	
+R79	BEFORE Arg1:E56 Arg2:E53	

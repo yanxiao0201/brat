@@ -1,0 +1,555 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T1 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">57-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T2 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">male</FONT></B><br/>(Gender)>,
+     shape=box];
+  T3 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hypertensive</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T4 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Caucasian</FONT></B><br/>(Ethnicity)>,
+     shape=box];
+  T5 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">medical treatment</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T6 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">1.5 months</FONT></B><br/>(Duration)>,
+     shape=box];
+  T7 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">non-organic AF</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T7 -> T8 [label=BEFORE, ltail=cluster_0, lhead=cluster_1];
+  T8 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">admitted</FONT></B><br/>(Activity)>,
+     shape=box];
+  T8 -> T11 [label=BEFORE, ltail=cluster_1, lhead=cluster_12];
+  T9 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">high-ventricular response AF</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T10 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">170 per minute</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T10 -> T9 [label=MODIFIER, color=gray];
+  T11 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">sinus rhythm</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T12 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">two times every second day</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T12 -> T28 [label=MODIFIER, color=gray];
+  T13 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">apnea test</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T13 -> T15 [label=BEFORE, ltail=cluster_13, lhead=cluster_14];
+  T14 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">same night</FONT></B><br/>(Time)>,
+     shape=box];
+  T15 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">apnea-hypopnea index</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T16 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">71 per hour</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T16 -> T17 [label=MODIFIER, color=gray];
+  T17 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">AHI</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T18 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">minimum peripheral oxygen saturation</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T19 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">SpO2</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T20 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">67%</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T20 -> T18 [label=MODIFIER, color=gray];
+  T20 -> T19 [label=MODIFIER, color=gray];
+  T21 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">desaturation period</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T22 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">SpO2</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T22 -> T25 [label=BEFORE, ltail=cluster_14, lhead=cluster_2];
+  T23 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">less than 90%</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T23 -> T22 [label=MODIFIER, color=gray];
+  T24 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">28 minutes</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T24 -> T21 [label=MODIFIER, color=gray];
+  T25 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">discharged</FONT></B><br/>(Activity)>,
+     shape=box];
+  T26 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">medical treatment</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T27 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">nocturnal BiPAP treatment</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T28 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">CV</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T28 -> T121 [label=BEFORE, ltail=cluster_12];
+  T29 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">33-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T30 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">male</FONT></B><br/>(Gender)>,
+     shape=box];
+  T31 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">heart rate</FONT></B><br/>(Sign_symptom)<br/>(DEC)>,
+     shape=box];
+  T31 -> T46 [label=DECREASE_FROM, color=gray, ltail=cluster_4];
+  T31 -> T47 [label=DECREASE_TO, color=gray, ltail=cluster_4];
+  T31 -> T54 [label=BEFORE, ltail=cluster_4];
+  T31 -> T122 [label=BEFORE, ltail=cluster_4];
+  T32 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">presented</FONT></B><br/>(Activity)>,
+     shape=box];
+  T32 -> T41 [label=BEFORE];
+  T33 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">falling from a bicycle</FONT></B><br/>(Activity)>,
+     shape=box];
+  T33 -> T32 [label=BEFORE, ltail=cluster_3];
+  T34 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">riding intoxicated</FONT></B><br/>(Activity)>,
+     shape=box];
+  T35 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">riding</FONT></B><br/>(Activity)>,
+     shape=box];
+  T36 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">intoxicated</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T36 -> T35 [label=MODIFIER, color=gray];
+  T37 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">wearing a helmet</FONT></B><br/>(Activity)>,
+     shape=box];
+  T38 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">unilateral lacerations</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T39 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">zygomaticomaxillary complex fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T40 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">orbital floor fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T40 -> T41 [label=BEFORE, ltail=cluster_3];
+  T41 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Examination of extraocular motility</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T41 -> T43 [label=BEFORE];
+  T42 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">extraocular</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T42 -> T41 [label=MODIFIER, color=gray];
+  T43 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">a-2 restriction in upgaze in the affected eye</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T43 -> T45 [label=BEFORE];
+  T44 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">eye</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T44 -> T43 [label=MODIFIER, color=gray];
+  T45 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">continuous cardiac monitor</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T45 -> T31 [label=BEFORE, lhead=cluster_4];
+  T46 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">65–70</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T47 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">42–45</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T48 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">a baseline pulse</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T48 -> T46 [label=MODIFIER, color=gray];
+  T49 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">attempted upgaze</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T49 -> T47 [label=MODIFIER, color=gray];
+  T50 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T51 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)<br/>(DEC)>,
+     shape=box];
+  T52 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">sustained upgaze</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T53 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">50 beats per minute</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T53 -> T52 [label=MODIFIER, color=gray];
+  T54 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">return to primary gaze</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T54 -> T50 [label=BEFORE];
+  T55 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">syncopal symptoms</FONT></B><br/>(Sign_symptom)<br/>(NEG)>,
+     shape=box];
+  T56 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T57 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">vomiting</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T58 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">3 witnessed episodes</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T58 -> T57 [label=MODIFIER, color=gray];
+  T59 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">The rest of the eye exam</FONT></B><br/>(Diagnostic_procedure)<br/>(NEG)>,
+     shape=box];
+  T60 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T61 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">inferior rectus muscle entrapment</FONT></B><br/>(Disease_disorder)<br/>(MAYBE_POS)>,
+     shape=box];
+  T61 -> T62 [label=BEFORE, ltail=cluster_4];
+  T62 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">CT of the head/orbits</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T62 -> T64 [label=BEFORE, lhead=cluster_5];
+  T63 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">head/orbits</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T63 -> T62 [label=MODIFIER, color=gray];
+  T64 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">prolapse of the inferior rectus</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T65 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">soft tissue</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T66 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">small amount</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T66 -> T65 [label=MODIFIER, color=gray];
+  T67 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">adventitia</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T67 -> T65 [label=MODIFIER, color=gray];
+  T68 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">inferior rectus</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T68 -> T67 [label=MODIFIER, color=gray];
+  T69 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">orbital floor fracture</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T69 -> T68 [label=MODIFIER, color=gray];
+  T70 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">orbital floor bones</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T70 -> T73 [label=MODIFIER, color=gray];
+  T71 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">linear fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T72 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">trapdoor fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T73 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">orbital floor bones were also non-displaced</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T74 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">74-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T75 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">drug-refractory paroxys-mal atrial flutter</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T76 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">circumferential pulmonary venous isolation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T76 -> T75 [label=BEFORE, lhead=cluster_11];
+  T76 -> T78 [label=BEFORE];
+  T77 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">referred</FONT></B><br/>(Activity)>,
+     shape=box];
+  T77 -> T79 [label=BEFORE, ltail=cluster_11, lhead=cluster_6];
+  T77 -> T110 [label=BEFORE, ltail=cluster_11];
+  T78 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">2 years</FONT></B><br/>(Duration)>,
+     shape=box];
+  T78 -> T75 [label=BEFORE, lhead=cluster_11];
+  T79 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T80 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">clinical arrhythmia</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T80 -> T81 [label=BEFORE, ltail=cluster_6];
+  T81 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Mapping</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T81 -> T83 [label=BEFORE];
+  T82 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left atrium</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T82 -> T81 [label=MODIFIER, color=gray];
+  T83 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">tachycardia cycle length</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T83 -> T85 [label=BEFORE];
+  T84 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">entire</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T84 -> T83 [label=MODIFIER, color=gray];
+  T85 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">fractionated bipolar electrograms</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T85 -> T93 [label=BEFORE, lhead=cluster_7];
+  T86 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">fractionated</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T86 -> T85 [label=MODIFIER, color=gray];
+  T87 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">bipolar</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T87 -> T85 [label=MODIFIER, color=gray];
+  T88 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">anterolateral left atrial (LA) wall</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T88 -> T85 [label=MODIFIER, color=gray];
+  T89 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">anterolateral</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T89 -> T88 [label=MODIFIER, color=gray];
+  T90 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T90 -> T91 [label=MODIFIER, color=gray];
+  T91 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">atrial</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T91 -> T88 [label=MODIFIER, color=gray];
+  T92 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left atrial</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T92 -> T88 [label=MODIFIER, color=gray];
+  T93 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">concealed entrainment</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T94 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">postpacing interval</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T95 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">tachycardia cycle length</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T95 -> T96 [label=BEFORE, ltail=cluster_7, lhead=cluster_8];
+  T96 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">linear ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T97 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">mitral annulus</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T97 -> T96 [label=MODIFIER, color=gray];
+  T98 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">fractionated electrograms</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T99 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">scar</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T100 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left superior pulmonary vein</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T100 -> T99 [label=MODIFIER, color=gray];
+  T101 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">irrigated tip catheter</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T101 -> T104 [label=BEFORE, ltail=cluster_8];
+  T102 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">35 W</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T102 -> T101 [label=MODIFIER, color=gray];
+  T103 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">40 oC</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T103 -> T101 [label=MODIFIER, color=gray];
+  T104 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">atrial flutter</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T104 -> T105 [label=BEFORE, lhead=cluster_9];
+  T105 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">sinus nodal (SN) arrest</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T106 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">urgent temporary pacing</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T106 -> T108 [label=BEFORE, ltail=cluster_9];
+  T107 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">recovery of SN function</FONT></B><br/>(Sign_symptom)<br/>(NEG)>,
+     shape=box];
+  T108 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">3 days</FONT></B><br/>(Duration)>,
+     shape=box];
+  T108 -> T107 [label=BEFORE, lhead=cluster_10];
+  T109 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">permanent pacemaker</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T110 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">cardiac computed tomography (CT)</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T110 -> T111 [label=BEFORE, lhead=cluster_6];
+  T111 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">abla-tion</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T111 -> T123 [label=BEFORE, ltail=cluster_6];
+  T112 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">small blood vessel</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T112 -> T123 [label=MODIFIER, color=gray];
+  T113 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">small</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T113 -> T112 [label=MODIFIER, color=gray];
+  T114 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left circumflex artery</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T114 -> T112 [label=MODIFIER, color=gray];
+  T115 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">anterior LA wall</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T115 -> T112 [label=MODIFIER, color=gray];
+  T116 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">cavoatrial junction of the right atrium</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T116 -> T112 [label=MODIFIER, color=gray];
+  T117 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">3-dimensional reconstruction image</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T118 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left-sided SN artery</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T118 -> T117 [label=MODIFIER, color=gray];
+  T119 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left-sided</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T119 -> T118 [label=MODIFIER, color=gray];
+  T120 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">SN</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T120 -> T118 [label=MODIFIER, color=gray];
+  T121 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">second CV</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T121 -> T14 [label=BEFORE, lhead=cluster_13];
+  T122 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">approximately 20 seconds</FONT></B><br/>(Duration)>,
+     shape=box];
+  T122 -> T51 [label=BEFORE, lhead=cluster_15];
+  T123 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">review</FONT></B><br/>(Activity)>,
+     shape=box];
+  T123 -> T117 [label=BEFORE];
+  subgraph cluster_0 {
+    T3;
+    T5;
+    T6;
+    T7;
+    color=lightskyblue;
+  }
+  subgraph cluster_1 {
+    T8;
+    T9;
+    color=lightskyblue;
+  }
+  subgraph cluster_2 {
+    T25;
+    T26;
+    T27;
+    color=lightskyblue;
+  }
+  subgraph cluster_3 {
+    T33;
+    T34;
+    T35;
+    T37;
+    T38;
+    T39;
+    T40;
+    color=lightskyblue;
+  }
+  subgraph cluster_4 {
+    T31;
+    T55;
+    T56;
+    T57;
+    T59;
+    T60;
+    T61;
+    color=lightskyblue;
+  }
+  subgraph cluster_5 {
+    T64;
+    T65;
+    T71;
+    T72;
+    T73;
+    color=lightskyblue;
+  }
+  subgraph cluster_6 {
+    T79;
+    T80;
+    T111;
+    color=lightskyblue;
+  }
+  subgraph cluster_7 {
+    T93;
+    T94;
+    T95;
+    color=lightskyblue;
+  }
+  subgraph cluster_8 {
+    T96;
+    T98;
+    T99;
+    T101;
+    color=lightskyblue;
+  }
+  subgraph cluster_9 {
+    T105;
+    T106;
+    color=lightskyblue;
+  }
+  subgraph cluster_10 {
+    T107;
+    T109;
+    color=lightskyblue;
+  }
+  subgraph cluster_11 {
+    T75;
+    T77;
+    color=lightskyblue;
+  }
+  subgraph cluster_12 {
+    T11;
+    T28;
+    color=lightskyblue;
+  }
+  subgraph cluster_13 {
+    T13;
+    T14;
+    color=lightskyblue;
+  }
+  subgraph cluster_14 {
+    T15;
+    T17;
+    T18;
+    T19;
+    T21;
+    T22;
+    color=lightskyblue;
+  }
+  subgraph cluster_15 {
+    T51;
+    T52;
+    color=lightskyblue;
+  }
+}

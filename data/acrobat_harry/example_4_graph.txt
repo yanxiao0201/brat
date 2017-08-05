@@ -1,0 +1,174 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T130 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">39-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T131 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">obese</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T131 -> T134 [label=BEFORE];
+  T132 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">woman</FONT></B><br/>(Gender)>,
+     shape=box];
+  T133 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">presented</FONT></B><br/>(Activity)>,
+     shape=box];
+  T134 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">influenza A (H1N1)-related acute respiratory distress syndrome (ARDS)</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T134 -> T135 [label=BEFORE, lhead=cluster_15];
+  T135 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">refractory hypoxemia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T136 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">veno-venous extracorporeal membrane oxygenation (ECMO)</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T136 -> T139 [label=BEFORE, ltail=cluster_15, lhead=cluster_16];
+  T137 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">day 2</FONT></B><br/>(Date)>,
+     shape=box];
+  T138 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">day 15</FONT></B><br/>(Date)>,
+     shape=box];
+  T139 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">venous catheter-related infection</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T140 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left subclavian</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T140 -> T141 [label=MODIFIER, color=gray];
+  T141 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">venous catheter</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T142 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">using the Seldinger technique</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T142 -> T141 [label=MODIFIER, color=gray];
+  T143 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">acute circulatory shock</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T144 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">shortly afterwards</FONT></B><br/>(Time)>,
+     shape=box];
+  T145 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">transthoracic echocardiogram</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T146 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">cardiac tamponade</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T147 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">pericardial effusion with collapsed right chambers</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T148 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">chest X-ray</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T149 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">catheter</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T149 -> T152 [label=BEFORE, ltail=cluster_16, lhead=cluster_7];
+  T150 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">malposi-tioned</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T150 -> T149 [label=MODIFIER, color=gray];
+  T151 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left lung</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T151 -> T149 [label=MODIFIER, color=gray];
+  T152 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Cardiac arrest</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T153 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">emergent sternotomy</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T154 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">ECMO-assisted cardiopulmonary resuscitation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T155 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">femoral artery cannu-lation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T155 -> T153 [label=BEFORE, lhead=cluster_7];
+  T155 -> T156 [label=BEFORE, lhead=cluster_17];
+  T156 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Pulmonary artery perforation</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T157 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hemopericardium</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T158 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">surgically repaired</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T159 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">catheter withdrawal</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T159 -> T158 [label=BEFORE, lhead=cluster_17];
+  T159 -> T160 [label=BEFORE, lhead=cluster_18];
+  T160 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">severe ARDS secondary to Enterococcus faecalis bacteremia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T161 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">redo veno-venous ECMO</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T161 -> T162 [label=BEFORE, ltail=cluster_18];
+  T162 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">made a full recovery</FONT></B><br/>(Activity)>,
+     shape=box];
+  T162 -> T163 [label=BEFORE, lhead=cluster_19];
+  T163 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">discharged</FONT></B><br/>(Activity)>,
+     shape=box];
+  T164 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">2.5 months</FONT></B><br/>(Duration)>,
+     shape=box];
+  T165 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hospital admission</FONT></B><br/>(Activity)>,
+     shape=box];
+  T165 -> T164 [label=BEFORE, ltail=cluster_20, lhead=cluster_19];
+  T166 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">no neuro-logic or cardiopulmonary sequelae</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  subgraph cluster_7 {
+    T152;
+    T153;
+    T154;
+    color=lightskyblue;
+  }
+  subgraph cluster_15 {
+    T135;
+    T136;
+    color=lightskyblue;
+  }
+  subgraph cluster_16 {
+    T139;
+    T141;
+    T143;
+    T144;
+    T145;
+    T146;
+    T147;
+    T148;
+    T149;
+    color=lightskyblue;
+  }
+  subgraph cluster_17 {
+    T156;
+    T157;
+    T158;
+    color=lightskyblue;
+  }
+  subgraph cluster_18 {
+    T160;
+    T161;
+    color=lightskyblue;
+  }
+  subgraph cluster_19 {
+    T163;
+    T164;
+    color=lightskyblue;
+  }
+  subgraph cluster_20 {
+    T165;
+    T166;
+    color=lightskyblue;
+  }
+}

@@ -11,12 +11,14 @@ All "<COLLECTION>/*.ann"s will be converted.
 Graphs and intermediate results are saved in "graph/".
 STARTS indicate the starting character positions of the sub-documents,
 e.g. multiple case reports in one document.
-If a document name is not in STARTS, assume one sub-document.
+You can leave STARTS empty if there is only one sub-document for every document.
 '''
 
-COLLECTION = 'data/acrobat_yba'
-STARTS = {'example': [0, 634, 2030]} # 3 sub-documents in example.txt
+COLLECTION = 'acrobat'
+STARTS = {}
 
+# COLLECTION = 'acrobat_harry'
+# STARTS = {'example': [0, 634, 2030, 3246, 5224, 6605, 7659]} # 7 sub-documents in example.txt
 
 class Node:
     def __init__(self, id, label, type, start_pos):
@@ -134,7 +136,8 @@ class Graph:
         for i, s in enumerate(ss):
             s += '}'
             # print s
-            fn = 'graph/%s/%s_%s' % (COLLECTION, doc, i)
+            fn = 'data/%s/graph/%s_%s' % (COLLECTION, doc, i)
+            print fn
             with open('%s.txt' % fn, "w") as f:
                 f.write(s)
             os.system('dot -x -Goverlap=scale -Tpng %s.txt > %s.png' % (fn, fn))
@@ -177,9 +180,7 @@ class Graph:
 
 
 def main():
-    os.system('rm -rf graph/%s/* && mkdir -p graph/%s' % \
-        (COLLECTION, COLLECTION))
-    for file in glob.glob(os.path.join(COLLECTION, '*.ann')):
+    for file in glob.glob(os.path.join('data', COLLECTION, '*.ann')):
         doc = file.split('/')[-1].split('.')[0]
         graph = brat_to_graph(file)
         graph.to_dot_language_and_image(doc)

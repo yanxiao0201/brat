@@ -1,0 +1,175 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T87 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">58-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T88 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">3-year</FONT></B><br/>(Duration)>,
+     shape=box];
+  T89 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">paroxysmal atrial fibrillation</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T89 -> T90 [label=BEFORE];
+  T90 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">circumferential pulmonary vein isolation (PVI)</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T90 -> T96 [label=BEFORE, lhead=cluster_12];
+  T91 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">2012</FONT></B><br/>(Date)>,
+     shape=box];
+  T92 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">3 months</FONT></B><br/>(Duration)>,
+     shape=box];
+  T93 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">amiodarone</FONT></B><br/>(Medication)>,
+     shape=box];
+  T93 -> T96 [label=BEFORE, lhead=cluster_12];
+  T93 -> T99 [label=BEFORE, lhead=cluster_13];
+  T94 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">200 mg</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T94 -> T93 [label=MODIFIER, color=gray];
+  T95 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">daily</FONT></B><br/>(Frequency)>,
+     shape=box];
+  T96 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">symptomatic LAMRT</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T97 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">cycle length</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T98 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">385 ms</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T98 -> T97 [label=MODIFIER, color=gray];
+  T99 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">PVI-redo</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T100 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">circular mapping and abla-tion catheter</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T100 -> T99 [label=MODIFIER, color=gray];
+  T101 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">antral ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T101 -> T104 [label=BEFORE, ltail=cluster_13];
+  T102 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">PVI</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T103 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">outside the PV</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T103 -> T101 [label=MODIFIER, color=gray];
+  T104 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">single transseptal puncture</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T105 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">CARTO 3 map</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T105 -> T104 [label=BEFORE, ltail=cluster_14];
+  T106 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left atrium</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T106 -> T105 [label=MODIFIER, color=gray];
+  T107 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">using the nMarq catheter</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T107 -> T105 [label=MODIFIER, color=gray];
+  T108 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">activation map</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T109 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">LAMRT</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T110 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">exit to the left atrium (LA) at the roof of the left superior pulmonary vein (LSPV)</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T110 -> T109 [label=MODIFIER, color=gray];
+  T111 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">entrance at the bottom of the left inferior pulmonary vein</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T111 -> T109 [label=MODIFIER, color=gray];
+  T112 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T113 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">terminated the LAMRT</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T114 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">no in-ducible tachycardia</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T114 -> T126 [label=BEFORE];
+  T115 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">exit to the LA</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T116 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">blocked</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T116 -> T115 [label=MODIFIER, color=gray];
+  T117 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">left pulmonary veins</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T117 -> T119 [label=MODIFIER, color=gray];
+  T118 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">gap at the bottom of the LIPV</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T118 -> T119 [label=MODIFIER, color=gray];
+  T119 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Conduction</FONT></B><br/>(Activity)>,
+     shape=box];
+  T119 -> T120 [label=BEFORE];
+  T120 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">ab-lation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T120 -> T114 [label=BEFORE];
+  T121 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">lateral pulmonary veins</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T122 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">isolated</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T122 -> T121 [label=MODIFIER, color=gray];
+  T124 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">septal and lateral PVs</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T125 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">isolated</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T125 -> T124 [label=MODIFIER, color=gray];
+  T126 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">free of any tachycardia</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T127 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">6 months</FONT></B><br/>(Duration)>,
+     shape=box];
+  T128 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">LAMRT</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T129 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">ablation</FONT></B><br/>(Therapeutic_procedure)>,
+     shape=box];
+  T214 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">ten-electrode steerable lasso-shaped cathe-ter that allows irrigated unipolar and bi-polar radiofrequency (RF) ablation</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T214 -> T99 [label=MODIFIER, color=gray];
+  subgraph cluster_12 {
+    T96;
+    T97;
+    color=lightskyblue;
+  }
+  subgraph cluster_13 {
+    T99;
+    T101;
+    T102;
+    color=lightskyblue;
+  }
+  subgraph cluster_14 {
+    T105;
+    T108;
+    T109;
+    T112;
+    T113;
+    color=lightskyblue;
+  }
+}
