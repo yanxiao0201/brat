@@ -145,8 +145,8 @@ class Graph:
             print '%s.png will be generated' % fb
             with open('%s_graph.txt' % fb, "w") as f:
                 f.write(s)
-            os.system('dot -x -Goverlap=scale -Tpng %s_graph.txt > %s.png' % \
-                (fb, fb))
+            os.system('sudo dot -x -Goverlap=scale -Tpng %s_graph.txt > %s.png' \
+                % (fb, fb))
             os.system('rm %s_graph.txt' % fb)
 
     def get_attrib_str(self, node):
