@@ -1,0 +1,202 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T29 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">33-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T30 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">male</FONT></B><br/>(Gender)>,
+     shape=box];
+  T31 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">heart rate</FONT></B><br/>(Sign_symptom)<br/>(DEC)>,
+     shape=box];
+  T31 -> T46 [label=DECREASE_FROM, color=gray, ltail=cluster_4];
+  T31 -> T47 [label=DECREASE_TO, color=gray, ltail=cluster_4];
+  T31 -> T54 [label=BEFORE, ltail=cluster_4];
+  T31 -> T122 [label=BEFORE, ltail=cluster_4];
+  T32 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">presented</FONT></B><br/>(Activity)>,
+     shape=box];
+  T32 -> T41 [label=BEFORE];
+  T33 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">falling from a bicycle</FONT></B><br/>(Activity)>,
+     shape=box];
+  T33 -> T32 [label=BEFORE, ltail=cluster_3];
+  T34 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">riding intoxicated</FONT></B><br/>(Activity)>,
+     shape=box];
+  T35 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">riding</FONT></B><br/>(Activity)>,
+     shape=box];
+  T36 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">intoxicated</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T36 -> T35 [label=MODIFIER, color=gray];
+  T37 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">wearing a helmet</FONT></B><br/>(Activity)>,
+     shape=box];
+  T38 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">unilateral lacerations</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T39 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">zygomaticomaxillary complex fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T40 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">orbital floor fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T40 -> T41 [label=BEFORE, ltail=cluster_3];
+  T41 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Examination of extraocular motility</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T41 -> T43 [label=BEFORE];
+  T42 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">extraocular</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T42 -> T41 [label=MODIFIER, color=gray];
+  T43 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">a-2 restriction in upgaze in the affected eye</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T43 -> T45 [label=BEFORE];
+  T44 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">eye</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T44 -> T43 [label=MODIFIER, color=gray];
+  T45 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">continuous cardiac monitor</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T45 -> T31 [label=BEFORE, lhead=cluster_4];
+  T46 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">65–70</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T47 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">42–45</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T48 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">a baseline pulse</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T48 -> T46 [label=MODIFIER, color=gray];
+  T49 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">attempted upgaze</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T49 -> T47 [label=MODIFIER, color=gray];
+  T50 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T51 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)<br/>(DEC)>,
+     shape=box];
+  T52 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">sustained upgaze</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T53 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">50 beats per minute</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T53 -> T52 [label=MODIFIER, color=gray];
+  T54 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">return to primary gaze</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T54 -> T50 [label=BEFORE];
+  T55 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">syncopal symptoms</FONT></B><br/>(Sign_symptom)<br/>(NEG)>,
+     shape=box];
+  T56 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T57 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">vomiting</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T58 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">3 witnessed episodes</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T58 -> T57 [label=MODIFIER, color=gray];
+  T59 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">The rest of the eye exam</FONT></B><br/>(Diagnostic_procedure)<br/>(NEG)>,
+     shape=box];
+  T60 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bradycardia</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T61 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">inferior rectus muscle entrapment</FONT></B><br/>(Disease_disorder)<br/>(MAYBE_POS)>,
+     shape=box];
+  T61 -> T62 [label=BEFORE, ltail=cluster_4];
+  T62 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">CT of the head/orbits</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T62 -> T64 [label=BEFORE, lhead=cluster_5];
+  T63 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">head/orbits</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T63 -> T62 [label=MODIFIER, color=gray];
+  T64 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">prolapse of the inferior rectus</FONT></B><br/>(Disease_disorder)<br/>(NEG)>,
+     shape=box];
+  T65 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">soft tissue</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T66 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">small amount</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T66 -> T65 [label=MODIFIER, color=gray];
+  T67 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">adventitia</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T67 -> T65 [label=MODIFIER, color=gray];
+  T68 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">inferior rectus</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T68 -> T67 [label=MODIFIER, color=gray];
+  T69 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">orbital floor fracture</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T69 -> T68 [label=MODIFIER, color=gray];
+  T70 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">orbital floor bones</FONT></B><br/>(Anatomical_structure)>,
+     shape=ellipse];
+  T70 -> T73 [label=MODIFIER, color=gray];
+  T71 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">linear fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T72 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">trapdoor fracture</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T73 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">orbital floor bones were also non-displaced</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T122 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">approximately 20 seconds</FONT></B><br/>(Duration)>,
+     shape=box];
+  T122 -> T51 [label=BEFORE, lhead=cluster_15];
+  subgraph cluster_3 {
+    T33;
+    T34;
+    T35;
+    T37;
+    T38;
+    T39;
+    T40;
+    color=lightskyblue;
+  }
+  subgraph cluster_4 {
+    T31;
+    T55;
+    T56;
+    T57;
+    T59;
+    T60;
+    T61;
+    color=lightskyblue;
+  }
+  subgraph cluster_5 {
+    T64;
+    T65;
+    T71;
+    T72;
+    T73;
+    color=lightskyblue;
+  }
+  subgraph cluster_15 {
+    T51;
+    T52;
+    color=lightskyblue;
+  }
+}

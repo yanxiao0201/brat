@@ -7,4 +7,12 @@ config.py
 
 # Standard locations of data and server temporary files
 data/
+!data/acrobat/
 work/
+x
+
+# Others
+sudo apt-get install git
+graphviz-2.40.1.tar.gz
+graphviz-2.40.1/
+install

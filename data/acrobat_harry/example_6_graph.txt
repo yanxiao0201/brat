@@ -1,0 +1,47 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T123 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hydroxyzine</FONT></B><br/>(Medication)>,
+     shape=box];
+  T181 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">34-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T182 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">woman</FONT></B><br/>(Gender)>,
+     shape=box];
+  T215 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">QTc interval prolongation</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T216 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hydroxyzine overdose</FONT></B><br/>(Medication)>,
+     shape=box];
+  T217 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">high posology</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T217 -> T216 [label=MODIFIER, color=gray];
+  T218 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">bile ducts obstruction</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T219 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">liver impairment</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T220 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hydroxyzine overdose</FONT></B><br/>(Medication)>,
+     shape=box];
+  T221 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">transient renal failure</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T222 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">cetirizine accumulation</FONT></B><br/>(Medication)>,
+     shape=box];
+  T223 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">cetirizine</FONT></B><br/>(Medication)>,
+     shape=box];
+  T224 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hydroxyzine</FONT></B><br/>(Medication)>,
+     shape=box];
+  T225 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">QT prolongation</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+}

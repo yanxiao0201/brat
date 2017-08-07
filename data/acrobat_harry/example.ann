@@ -1,0 +1,484 @@
+T1	Age 2 13	57-year-old
+T2	Gender 14 18	male
+T3	Sign_symptom 19 31	hypertensive
+T4	Ethnicity 32 41	Caucasian
+T5	Therapeutic_procedure 61 78	medical treatment
+T7	Disease_disorder 98 112	non-organic AF
+T6	Duration 79 93	for 1.5 months
+T8	Activity 117 125	admitted
+T9	Disease_disorder 148 176	high-ventricular response AF
+T10	Quantitative_concept 178 192	170 per minute
+R1	MODIFIER Arg1:T10 Arg2:T9	
+T11	Sign_symptom 199 211	sinus rhythm
+T12	Frequency 260 286	two times every second day
+T13	Diagnostic_procedure 307 317	apnea test
+T14	Time 346 356	same night
+T15	Sign_symptom 394 414	apnea-hypopnea index
+T16	Quantitative_concept 424 435	71 per hour
+T17	Sign_symptom 416 419	AHI
+T18	Sign_symptom 437 473	minimum peripheral oxygen saturation
+T19	Sign_symptom 475 479	SpO2
+T20	Quantitative_concept 484 487	67%
+R2	MODIFIER Arg1:T20 Arg2:T19	
+R3	MODIFIER Arg1:T20 Arg2:T18	
+T21	Sign_symptom 493 512	desaturation period
+T22	Sign_symptom 514 518	SpO2
+T23	Quantitative_concept 522 535	less than 90%
+R4	MODIFIER Arg1:T23 Arg2:T22	
+T24	Quantitative_concept 540 550	28 minutes
+R5	MODIFIER Arg1:T24 Arg2:T21	
+T25	Activity 568 578	discharged
+T26	Therapeutic_procedure 584 601	medical treatment
+T27	Therapeutic_procedure 606 631	nocturnal BiPAP treatment
+*	OVERLAP T6 T5 T7 T3
+R6	BEFORE Arg1:T7 Arg2:T8	
+*	OVERLAP T8 T9 T11 T28 T12
+T28	Diagnostic_procedure 238 240	CV
+R8	BEFORE Arg1:T28 Arg2:T13	
+*	OVERLAP T13 T14
+R9	BEFORE Arg1:T13 Arg2:T15	
+*	OVERLAP T18 T19 T21 T22 T17 T15
+R10	MODIFIER Arg1:T16 Arg2:T17	
+R11	BEFORE Arg1:T22 Arg2:T25	
+*	OVERLAP T25 T26 T27
+#1	AnnotatorNotes T28	?
+T29	Age 643 654	33-year-old
+T30	Gender 663 667	male
+T31	Sign_symptom 1067 1077	heart rate
+E1	Sign_symptom:T31 
+T32	Activity 668 677	presented
+E2	Activity:T32 
+T33	Activity 712 734	falling from a bicycle
+E3	Activity:T33 
+T34	Activity 741 759	riding intoxicated
+E4	Activity:T34 
+T35	Activity 741 747	riding
+E5	Activity:T35 
+T36	Qualitative_concept 748 759	intoxicated
+R7	MODIFIER Arg1:T36 Arg2:E5	
+R12	AFTER Arg1:E2 Arg2:E3	
+T37	Activity 777 793	wearing a helmet
+E6	Activity:T37 
+T38	Disease_disorder 808 830	unilateral lacerations
+E7	Disease_disorder:T38 
+T39	Disease_disorder 837 873	zygomaticomaxillary complex fracture
+E8	Disease_disorder:T39 
+T40	Disease_disorder 882 904	orbital floor fracture
+E9	Disease_disorder:T40 
+*	OVERLAP E9 E8 E7 E6 E4 E3
+T41	Diagnostic_procedure 906 941	Examination of extraocular motility
+E10	Diagnostic_procedure:T41 
+T42	Anatomical_structure 921 932	extraocular
+R13	MODIFIER Arg1:T42 Arg2:E10	
+T43	Sign_symptom 951 996	a-2 restriction in upgaze in the affected eye
+E11	Sign_symptom:T43 
+T44	Anatomical_structure 993 996	eye
+R14	MODIFIER Arg1:T44 Arg2:E11	
+T45	Diagnostic_procedure 1004 1030	continuous cardiac monitor
+E12	Diagnostic_procedure:T45 
+A1	TREND E1 DEC
+T46	Quantitative_concept 1103 1108	65–70
+T47	Quantitative_concept 1130 1135	42–45
+T48	Qualitative_concept 1083 1099	a baseline pulse
+R15	MODIFIER Arg1:T48 Arg2:T46	
+R16	DECREASE_FROM Arg1:E1 Arg2:T46	
+R17	DECREASE_TO Arg1:E1 Arg2:T47	
+T49	Qualitative_concept 1141 1157	attempted upgaze
+R18	MODIFIER Arg1:T49 Arg2:T47	
+R19	BEFORE Arg1:E9 Arg2:E10	
+T50	Age 2030 2041	74-year-old
+T51	Gender 2042 2045	man
+T53	Duration 2097 2104	2 years
+E14	Duration:T53 
+T52	Disease_disorder 2054 2096	drug-refractory paroxys-mal atrial flutter
+E13	Disease_disorder:T52 
+T54	Therapeutic_procedure 2111 2153	circumferential pulmonary venous isolation
+E15	Therapeutic_procedure:T54 
+T55	Activity 2158 2166	referred
+E16	Activity:T55 
+T56	Therapeutic_procedure 2200 2208	ablation
+E17	Therapeutic_procedure:T56 
+T57	Disease_disorder 2210 2229	clinical arrhythmia
+E18	Disease_disorder:T57 
+T58	Diagnostic_procedure 2243 2250	Mapping
+E19	Diagnostic_procedure:T58 
+T59	Anatomical_structure 2258 2269	left atrium
+T60	Sign_symptom 2290 2314	tachycardia cycle length
+E20	Sign_symptom:T60 
+T61	Sign_symptom 2326 2359	fractionated bipolar electrograms
+E21	Sign_symptom:T61 
+T62	Anatomical_structure 2363 2398	anterolateral left atrial (LA) wall
+R20	MODIFIER Arg1:T59 Arg2:E19	
+R21	MODIFIER Arg1:T62 Arg2:E21	
+T63	Sign_symptom 2412 2433	concealed entrainment
+E22	Sign_symptom:T63 
+T64	Sign_symptom 2439 2458	postpacing interval
+E23	Sign_symptom:T64 
+T65	Sign_symptom 2475 2499	tachycardia cycle length
+E24	Sign_symptom:T65 
+T66	Therapeutic_procedure 2508 2523	linear ablation
+E25	Therapeutic_procedure:T66 
+T67	Anatomical_structure 2529 2543	mitral annulus
+T68	Sign_symptom 2550 2575	fractionated electrograms
+E26	Sign_symptom:T68 
+T69	Anatomical_structure 2583 2587	scar
+T70	Anatomical_structure 2593 2621	left superior pulmonary vein
+T71	Quantitative_concept 2662 2666	35 W
+T72	Quantitative_concept 2681 2686	40 oC
+T74	Disease_disorder 2738 2761	sinus nodal (SN) arrest
+E28	Disease_disorder:T74 
+T75	Therapeutic_procedure 2779 2795	temporary pacing
+E29	Therapeutic_procedure:T75 
+T76	Duration 2840 2846	3 days
+E30	Duration:T76 
+T77	Therapeutic_procedure 2854 2873	permanent pacemaker
+E31	Therapeutic_procedure:T77 
+T78	Activity 2878 2887	implanted
+E32	Activity:T78 
+T79	Diagnostic_procedure 2901 2933	cardiac computed tomography (CT)
+E33	Diagnostic_procedure:T79 
+T80	Therapeutic_procedure 2941 2950	abla-tion
+E34	Therapeutic_procedure:T80 
+T81	Anatomical_structure 2962 3024	small blood vessel originating from the left circumflex artery
+T82	Anatomical_structure 3044 3060	anterior LA wall
+T83	Anatomical_structure 3074 3113	cavoatrial junction of the right atrium
+T84	Diagnostic_procedure 3150 3152	CT
+E35	Diagnostic_procedure:T84 
+T85	Diagnostic_procedure 3156 3190	3-dimensional reconstruction image
+E36	Diagnostic_procedure:T85 
+T86	Anatomical_structure 3214 3234	left-sided SN artery
+#2	AnnotatorNotes T86	An interesting example since the SN artery isn't always on the left side, so this could also be a disorder, even though it's not really abnormal
+*	OVERLAP E17 E18 E16 E19 E20 E21 E22 E23 E24 E25 E26 E27
+T87	Age 3246 3257	58-year-old
+T88	Duration 3273 3279	3-year
+E37	Duration:T88 
+T89	Disease_disorder 3291 3321	paroxysmal atrial fibrillation
+E38	Disease_disorder:T89 
+T90	Therapeutic_procedure 3332 3378	circumferential pulmonary vein isolation (PVI)
+E39	Therapeutic_procedure:T90 
+T91	Date 3382 3386	2012
+E40	Date:T91 
+T92	Duration 3394 3402	3 months
+E41	Duration:T92 
+T93	Medication 3503 3513	amiodarone
+E42	Medication:T93 
+T94	Quantitative_concept 3515 3521	200 mg
+T95	Frequency 3522 3527	daily
+E43	Frequency:T95 
+R22	MODIFIER Arg1:T94 Arg2:E42	
+T96	Disease_disorder 3424 3441	symptomatic LAMRT
+E44	Disease_disorder:T96 
+T97	Sign_symptom 3449 3461	cycle length
+E45	Sign_symptom:T97 
+T98	Quantitative_concept 3465 3471	385 ms
+R23	MODIFIER Arg1:T98 Arg2:E45	
+T99	Therapeutic_procedure 3532 3540	PVI-redo
+E46	Therapeutic_procedure:T99 
+T100	Qualitative_concept 3569 3608	circular mapping and abla-tion catheter
+R24	MODIFIER Arg1:T100 Arg2:E46	
+T101	Therapeutic_procedure 3884 3899	antral ablation
+E47	Therapeutic_procedure:T101 
+T102	Therapeutic_procedure 3876 3879	PVI
+E48	Therapeutic_procedure:T102 
+T103	Anatomical_structure 3901 3915	outside the PV
+R25	MODIFIER Arg1:T103 Arg2:E47	
+T104	Diagnostic_procedure 3938 3965	single transseptal puncture
+E49	Diagnostic_procedure:T104 
+#3	AnnotatorNotes E49	I'm not sure this is technically diagnostic or therapeutic, but it's still a procedure
+T105	Diagnostic_procedure 3970 3981	CARTO 3 map
+E50	Diagnostic_procedure:T105 
+T106	Anatomical_structure 3989 4000	left atrium
+R26	MODIFIER Arg1:T106 Arg2:E50	
+T107	Qualitative_concept 4014 4038	using the nMarq catheter
+R27	MODIFIER Arg1:T107 Arg2:E50	
+T108	Diagnostic_procedure 4044 4058	activation map
+E51	Diagnostic_procedure:T108 
+T109	Disease_disorder 4071 4076	LAMRT
+E52	Disease_disorder:T109 
+T110	Anatomical_structure 4086 4169	exit to the left atrium (LA) at the roof of the left superior pulmonary vein (LSPV)
+R28	MODIFIER Arg1:T110 Arg2:E52	
+T111	Anatomical_structure 4178 4236	entrance at the bottom of the left inferior pulmonary vein
+R29	MODIFIER Arg1:T111 Arg2:E52	
+T112	Therapeutic_procedure 4494 4502	Ablation
+E53	Therapeutic_procedure:T112 
+T115	Anatomical_structure 4542 4556	exit to the LA
+T116	Qualitative_concept 4561 4568	blocked
+R30	MODIFIER Arg1:T116 Arg2:T115	
+T117	Anatomical_structure 4590 4610	left pulmonary veins
+T118	Anatomical_structure 4644 4673	gap at the bottom of the LIPV
+T119	Activity 4570 4580	Conduction
+E56	Activity:T119 
+T120	Therapeutic_procedure 4692 4701	ab-lation
+E57	Therapeutic_procedure:T120 
+T121	Anatomical_structure 4720 4743	lateral pulmonary veins
+T122	Qualitative_concept 4749 4757	isolated
+R31	MODIFIER Arg1:T122 Arg2:T121	
+T124	Anatomical_structure 4927 4949	septal and lateral PVs
+T125	Qualitative_concept 4955 4963	isolated
+R32	MODIFIER Arg1:T125 Arg2:T124	
+T127	Duration 5009 5017	6 months
+E59	Duration:T127 
+T126	Disease_disorder 4981 5004	free of any tachycardia
+E60	Disease_disorder:T126 
+A2	POLARITY E60 NEG
+T128	Disease_disorder 5060 5065	LAMRT
+E61	Disease_disorder:T128 
+T129	Therapeutic_procedure 5128 5136	ablation
+E62	Therapeutic_procedure:T129 
+T130	Age 5224 5235	39-year-old
+T131	Sign_symptom 5236 5241	obese
+E63	Sign_symptom:T131 
+T132	Gender 5242 5247	woman
+T133	Activity 5248 5257	presented
+E64	Activity:T133 
+T134	Disease_disorder 5263 5332	influenza A (H1N1)-related acute respiratory distress syndrome (ARDS)
+E65	Disease_disorder:T134 
+#4	AnnotatorNotes E65	"Influenza A" may be a candidate for a new event type of infectious agents
+T135	Disease_disorder 5344 5364	refractory hypoxemia
+E66	Disease_disorder:T135 
+T136	Therapeutic_procedure 5376 5430	veno-venous extracorporeal membrane oxygenation (ECMO)
+E67	Therapeutic_procedure:T136 
+T137	Date 5337 5342	day 2
+E68	Date:T137 
+T138	Date 5449 5455	day 15
+E69	Date:T138 
+T139	Disease_disorder 5457 5490	venous catheter-related infection
+E70	Disease_disorder:T139 
+T140	Anatomical_structure 5511 5526	left subclavian
+T141	Therapeutic_procedure 5527 5542	venous catheter
+E71	Therapeutic_procedure:T141 
+T142	Qualitative_concept 5556 5585	using the Seldinger technique
+R33	MODIFIER Arg1:T142 Arg2:E71	
+R34	MODIFIER Arg1:T140 Arg2:E71	
+T143	Disease_disorder 5677 5700	acute circulatory shock
+E72	Disease_disorder:T143 
+T144	Time 5714 5732	shortly afterwards
+E73	Time:T144 
+T145	Diagnostic_procedure 5738 5766	transthoracic echocardiogram
+E74	Diagnostic_procedure:T145 
+T146	Disease_disorder 5839 5856	cardiac tamponade
+E75	Disease_disorder:T146 
+T147	Sign_symptom 5776 5826	pericardial effusion with collapsed right chambers
+E76	Sign_symptom:T147 
+T148	Diagnostic_procedure 5862 5873	chest X-ray
+E77	Diagnostic_procedure:T148 
+T149	Therapeutic_procedure 5907 5915	catheter
+E78	Therapeutic_procedure:T149 
+T150	Qualitative_concept 5892 5906	malposi-tioned
+R35	MODIFIER Arg1:T150 Arg2:E78	
+T151	Anatomical_structure 5923 5932	left lung
+R36	MODIFIER Arg1:T151 Arg2:E78	
+T152	Disease_disorder 5934 5948	Cardiac arrest
+E79	Disease_disorder:T152 
+T153	Therapeutic_procedure 5960 5979	emergent sternotomy
+E80	Therapeutic_procedure:T153 
+T154	Therapeutic_procedure 6000 6043	ECMO-assisted cardiopulmonary resuscitation
+E81	Therapeutic_procedure:T154 
+T155	Therapeutic_procedure 6050 6077	femoral artery cannu-lation
+E82	Therapeutic_procedure:T155 
+*	OVERLAP E80 E81 E79
+R37	AFTER Arg1:E80 Arg2:E82	
+R38	BEFORE Arg1:E78 Arg2:E79	
+T156	Disease_disorder 6109 6137	Pulmonary artery perforation
+E83	Disease_disorder:T156 
+T157	Disease_disorder 6151 6166	hemopericardium
+E84	Disease_disorder:T157 
+T158	Therapeutic_procedure 6177 6196	surgically repaired
+E85	Therapeutic_procedure:T158 
+T159	Therapeutic_procedure 6203 6222	catheter withdrawal
+E86	Therapeutic_procedure:T159 
+R39	AFTER Arg1:E85 Arg2:E86	
+T160	Disease_disorder 6271 6328	severe ARDS secondary to Enterococcus faecalis bacteremia
+E87	Disease_disorder:T160 
+T161	Therapeutic_procedure 6334 6355	redo veno-venous ECMO
+E88	Therapeutic_procedure:T161 
+T162	Activity 6369 6389	made a full recovery
+E89	Activity:T162 
+T163	Activity 6398 6408	discharged
+E90	Activity:T163 
+T164	Duration 6414 6424	2.5 months
+E91	Duration:T164 
+T165	Activity 6431 6449	hospital admission
+E92	Activity:T165 
+T166	Disease_disorder 6455 6497	no neuro-logic or cardiopulmonary sequelae
+E93	Disease_disorder:T166 
+A3	POLARITY E93 NEG
+T167	Age 6605 6616	54-year-old
+T168	Gender 6617 6622	woman
+T169	Disease_disorder 6638 6650	giant struma
+E94	Disease_disorder:T169 
+T170	Disease_disorder 6652 6667	hyperthyroidism
+E95	Disease_disorder:T170 
+T171	Sign_symptom 6689 6701	palpitations
+E96	Sign_symptom:T171 
+T172	Sign_symptom 6706 6714	dyspnoea
+E97	Sign_symptom:T172 
+#5	AnnotatorNotes E97	variant of dyspnea
+T173	Diagnostic_procedure 6720 6723	ECG
+E98	Diagnostic_procedure:T173 
+T174	Disease_disorder 6731 6762	tachycardia atrial fibrillation
+E99	Disease_disorder:T174 
+T175	Diagnostic_procedure 6764 6780	Echocardiography
+E100	Diagnostic_procedure:T175 
+T176	Sign_symptom 6790 6822	dilatation of the left ventricle
+E101	Sign_symptom:T176 
+T177	Sign_symptom 6839 6856	systolic function
+E102	Sign_symptom:T177 
+T178	Qualitative_concept 6824 6838	highly reduced
+R40	MODIFIER Arg1:T178 Arg2:E102	
+T179	Sign_symptom 6869 6880	hypokinesia
+E103	Sign_symptom:T179 
+T180	Qualitative_concept 6861 6868	diffuse
+R41	MODIFIER Arg1:T180 Arg2:E103	
+T181	Age 8429 8440	34-year-old
+T182	Gender 8441 8446	woman
+T183	Lab 6882 6928	Serum thyroid stimulating hormone (TSH) levels
+E104	Lab:T183 
+T184	Quantitative_concept 6934 6954	less than 0.03 lU/ml
+R42	MODIFIER Arg1:T184 Arg2:E104	
+T185	Lab 6994 7021	free triiodothyronine (fT3)
+E105	Lab:T185 
+T186	Quantitative_concept 7026 7036	7.32 pg/ml
+R43	MODIFIER Arg1:T186 Arg2:E105	
+T187	Lab 7058 7078	free thyroxine (fT4)
+E106	Lab:T187 
+#6	AnnotatorNotes E106	Is there a missing value?
+R44	AFTER Arg1:E13 Arg2:E15	
+R45	BEFORE Arg1:E15 Arg2:E16	
+R46	MODIFIER Arg1:T67 Arg2:E25	
+R47	MODIFIER Arg1:T69 Arg2:E25	
+R48	MODIFIER Arg1:T70 Arg2:E25	
+T188	Qualitative_concept 2622 2653	using an irrigated tip catheter
+T189	Qualitative_concept 2655 2660	power
+R49	MODIFIER Arg1:T188 Arg2:E25	
+R50	MODIFIER Arg1:T189 Arg2:E25	
+R51	MODIFIER Arg1:T71 Arg2:E25	
+R52	MODIFIER Arg1:T72 Arg2:E25	
+T190	Qualitative_concept 2668 2679	temperature
+R53	MODIFIER Arg1:T190 Arg2:E25	
+T73	Disease_disorder 2689 2714	atrial flutter terminated
+E27	Disease_disorder:T73 
+A4	POLARITY E27 NEG
+R54	BEFORE Arg1:E27 Arg2:E28	
+*	OVERLAP E28 E29
+T191	Disease_disorder 2807 2833	no recovery of SN function
+E107	Disease_disorder:T191 
+R55	BEFORE Arg1:E29 Arg2:E107	
+*	OVERLAP E107 E31 E32
+T192	Disease_disorder 1163 1174	bradycardia
+E108	Disease_disorder:T192 
+T194	Disease_disorder 1246 1257	bradycardia
+E109	Disease_disorder:T194 
+T198	Disease_disorder 1419 1430	bradycardia
+E112	Disease_disorder:T198 
+T199	Sign_symptom 1472 1480	vomiting
+E113	Sign_symptom:T199 
+T200	Sign_symptom 1533 1558	eye exam was unremarkable
+E114	Sign_symptom:T200 
+A5	POLARITY E114 NEG
+T201	Disease_disorder 1591 1602	bradycardia
+E115	Disease_disorder:T201 
+T202	Disease_disorder 1618 1651	inferior rectus muscle entrapment
+E116	Disease_disorder:T202 
+A6	POLARITY E116 MAYBE_POS
+T203	Diagnostic_procedure 1664 1666	CT
+E117	Diagnostic_procedure:T203 
+T204	Anatomical_structure 1674 1678	head
+T205	Anatomical_structure 1679 1685	orbits
+T206	Disease_disorder 1699 1733	no prolapse of the inferior rectus
+E118	Disease_disorder:T206 
+A7	POLARITY E118 NEG
+T208	Qualitative_concept 1825 1904	surrounding the inferior rectus trapped in and below the orbital floor fracture
+T207	Sign_symptom 1814 1824	adventitia
+E119	Sign_symptom:T207 
+R56	MODIFIER Arg1:T208 Arg2:E119	
+T209	Anatomical_structure 1910 1929	orbital floor bones
+T210	Qualitative_concept 1940 1953	non-displaced
+R57	MODIFIER Arg1:T210 Arg2:T209	
+T211	Qualitative_concept 1966 1981	linear fracture
+T212	Qualitative_concept 2001 2018	trapdoor fracture
+R58	MODIFIER Arg1:T211 Arg2:T209	
+R59	MODIFIER Arg1:T212 Arg2:T209	
+A8	POLARITY E108 NEG
+T193	Qualitative_concept 1190 1226	resolve after return to primary gaze
+T195	Qualitative_concept 1269 1299	diminish with sustained upgaze
+R60	MODIFIER Arg1:T193 Arg2:E108	
+R61	MODIFIER Arg1:T195 Arg2:E109	
+T196	Quantitative_concept 1310 1329	50 beats per minute
+T213	Duration 1330 1360	after approximately 20 seconds
+E110	Duration:T213 
+R62	MODIFIER Arg1:T196 Arg2:E109	
+*	OVERLAP E110 E109 E10 E11 E12 E1 E108 E111 E112 E113 E114 E115 E116 E117 E118 E119
+T197	Sign_symptom 1374 1407	did not endorse syncopal symptoms
+E111	Sign_symptom:T197 
+A9	POLARITY E111 NEG
+R63	MODIFIER Arg1:T204 Arg2:E117	
+R64	MODIFIER Arg1:T205 Arg2:E117	
+R65	BEFORE Arg1:E33 Arg2:E34	
+R66	AFTER Arg1:E34 Arg2:E35	
+R67	MODIFIER Arg1:T81 Arg2:E33	
+R68	MODIFIER Arg1:T82 Arg2:E33	
+R69	MODIFIER Arg1:T83 Arg2:E33	
+R70	MODIFIER Arg1:T86 Arg2:E36	
+*	OVERLAP E35 E36
+R71	BEFORE Arg1:E38 Arg2:E39	
+R72	BEFORE Arg1:E39 Arg2:E44	
+*	OVERLAP E44 E45
+R73	AFTER Arg1:E44 Arg2:E42	
+R74	BEFORE Arg1:E42 Arg2:E46	
+T214	Qualitative_concept 3672 3791	ten-electrode steerable lasso-shaped cathe-ter that allows irrigated unipolar and bi-polar radiofrequency (RF) ablation
+R75	MODIFIER Arg1:T214 Arg2:E46	
+*	OVERLAP E46 E48 E47
+R76	BEFORE Arg1:E47 Arg2:E49	
+R77	AFTER Arg1:E49 Arg2:E50	
+*	OVERLAP E50 E51 E52 E53 E54
+T113	Disease_disorder 4516 4536	terminated the LAMRT
+E54	Disease_disorder:T113 
+A10	POLARITY E54 NEG
+R78	MODIFIER Arg1:T117 Arg2:E56	
+R79	MODIFIER Arg1:T118 Arg2:E56	
+R80	BEFORE Arg1:E56 Arg2:E57	
+T114	Disease_disorder 4896 4921	no in-ducible tachycardia
+E55	Disease_disorder:T114 
+A11	POLARITY E55 NEG
+R81	BEFORE Arg1:E57 Arg2:E55	
+R82	BEFORE Arg1:E55 Arg2:E60	
+R83	BEFORE Arg1:E63 Arg2:E65	
+R84	BEFORE Arg1:E65 Arg2:E66	
+*	OVERLAP E66 E67
+R85	BEFORE Arg1:E67 Arg2:E70	
+*	OVERLAP E70 E71 E72 E73 E74 E76 E75 E77 E78
+R86	BEFORE Arg1:E82 Arg2:E83	
+*	OVERLAP E83 E84 E85
+R87	BEFORE Arg1:E86 Arg2:E87	
+*	OVERLAP E87 E88
+R88	BEFORE Arg1:E88 Arg2:E89	
+R89	BEFORE Arg1:E89 Arg2:E90	
+*	OVERLAP E90 E91
+R90	AFTER Arg1:E91 Arg2:E92	
+*	OVERLAP E92 E93
+*	OVERLAP E94 E95 E96 E97 E98 E99 E100 E101 E102 E103 E104 E105
+T123	Medication 7659 7670	hydroxyzine
+E58	Medication:T123 
+T215	Sign_symptom 7718 7743	QTc interval prolongation
+E120	Sign_symptom:T215 
+T216	Medication 7791 7811	hydroxyzine overdose
+E121	Medication:T216 
+T217	Qualitative_concept 7841 7854	high posology
+R91	MODIFIER Arg1:T217 Arg2:E121	
+T218	Disease_disorder 7856 7878	bile ducts obstruction
+E122	Disease_disorder:T218 
+T219	Disease_disorder 7884 7900	liver impairment
+E123	Disease_disorder:T219 
+T220	Medication 8060 8080	hydroxyzine overdose
+E124	Medication:T220 
+T221	Disease_disorder 8085 8108	transient renal failure
+E125	Disease_disorder:T221 
+T222	Medication 8128 8151	cetirizine accumulation
+E126	Medication:T222 
+T223	Medication 8162 8172	cetirizine
+E127	Medication:T223 
+T224	Medication 8947 8958	hydroxyzine
+E128	Medication:T224 
+T225	Sign_symptom 8969 8984	QT prolongation
+E129	Sign_symptom:T225 

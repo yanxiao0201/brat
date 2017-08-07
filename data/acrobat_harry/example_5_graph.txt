@@ -1,0 +1,80 @@
+digraph G {
+  graph [compound=true];
+  edge [fontname = "courier"];
+  T167 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">54-year-old</FONT></B><br/>(Age)>,
+     shape=box];
+  T168 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">woman</FONT></B><br/>(Gender)>,
+     shape=box];
+  T169 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">giant struma</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T170 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hyperthyroidism</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T171 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">palpitations</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T172 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">dyspnoea</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T173 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">ECG</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T174 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">tachycardia atrial fibrillation</FONT></B><br/>(Disease_disorder)>,
+     shape=box];
+  T175 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Echocardiography</FONT></B><br/>(Diagnostic_procedure)>,
+     shape=box];
+  T176 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">dilatation of the left ventricle</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T177 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">systolic function</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T178 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">highly reduced</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T178 -> T177 [label=MODIFIER, color=gray];
+  T179 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">hypokinesia</FONT></B><br/>(Sign_symptom)>,
+     shape=box];
+  T180 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">diffuse</FONT></B><br/>(Qualitative_concept)>,
+     shape=ellipse];
+  T180 -> T179 [label=MODIFIER, color=gray];
+  T183 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">Serum thyroid stimulating hormone (TSH) levels</FONT></B><br/>(Lab)>,
+     shape=box];
+  T184 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">less than 0.03 lU/ml</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T184 -> T183 [label=MODIFIER, color=gray];
+  T185 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">free triiodothyronine (fT3)</FONT></B><br/>(Lab)>,
+     shape=box];
+  T186 [color=darkgoldenrod2,
+     label=<<B><FONT POINT-SIZE="17">7.32 pg/ml</FONT></B><br/>(Quantitative_concept)>,
+     shape=ellipse];
+  T186 -> T185 [label=MODIFIER, color=gray];
+  T187 [color=coral,
+     label=<<B><FONT POINT-SIZE="17">free thyroxine (fT4)</FONT></B><br/>(Lab)>,
+     shape=box];
+  subgraph cluster_21 {
+    T169;
+    T170;
+    T171;
+    T172;
+    T173;
+    T174;
+    T175;
+    T176;
+    T177;
+    T179;
+    T183;
+    T185;
+    color=lightskyblue;
+  }
+}
