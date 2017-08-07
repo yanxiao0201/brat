@@ -1,4 +1,0 @@
-digraph G {
-  graph [compound=true];
-  edge [fontname = "courier"];
-}

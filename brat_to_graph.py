@@ -6,6 +6,8 @@ import sys, os, re, bisect, glob
 Convert brat annotations to graphs using graphviz.
 Dependency: graphviz.
 (installation on Ubuntu:
+./install_graphviz.sh
+or
 https://stackoverflow.com/questions/34228395/ubuntu-graphviz-sfdp-not-working)
 All "<COLLECTION>/*.ann"s will be converted.
 Graphs and intermediate results are saved in "graph/".
@@ -15,7 +17,7 @@ You can leave STARTS empty if there is only one sub-document for every document.
 '''
 
 COLLECTION = 'acrobat'
-STARTS = {}
+STARTS = {'example': [0, 634, 2030]} # 3 sub-documents in example.txt
 
 # COLLECTION = 'acrobat_harry'
 # STARTS = {'example': [0, 634, 2030, 3246, 5224, 6605, 7659]} # 7 sub-documents in example.txt
@@ -101,9 +103,10 @@ class Graph:
                 return 'cluster_%s' % i
         return None
 
-    def to_dot_language_and_image(self, doc):
+    def to_dot_language_and_image(self, filebase):
         self.transform_e_to_t()
         # Create a list of dot language strings.
+        doc = filebase.split('/')[-1]
         if not doc in STARTS:
             STARTS[doc] = [0] # assuming one sub-document
         ss = ['digraph G {\n  graph [compound=true];\n  ' \
@@ -136,11 +139,15 @@ class Graph:
         for i, s in enumerate(ss):
             s += '}'
             # print s
-            fn = 'data/%s/graph/%s_%s' % (COLLECTION, doc, i)
-            print fn
-            with open('%s.txt' % fn, "w") as f:
+            fb = filebase
+            if len(ss) > 1:
+                fb = fb + '_' + str(i+1)
+            print '%s.png will be generated' % fb
+            with open('%s_graph.txt' % fb, "w") as f:
                 f.write(s)
-            os.system('dot -x -Goverlap=scale -Tpng %s.txt > %s.png' % (fn, fn))
+            os.system('dot -x -Goverlap=scale -Tpng %s_graph.txt > %s.png' % \
+                (fb, fb))
+            os.system('rm %s_graph.txt' % fb)
 
     def get_attrib_str(self, node):
         attribs = node.get_attribs()
@@ -180,10 +187,17 @@ class Graph:
 
 
 def main():
-    for file in glob.glob(os.path.join('data', COLLECTION, '*.ann')):
+    files = glob.glob('data/%s/*.ann' % COLLECTION)
+    for dir in glob.glob('data/%s/*/' % COLLECTION):
+        for file in glob.glob('%s/*.ann' % dir):
+            files.append(file)
+    print '%s annotation files' % len(files)
+    files = [file for file in files if os.stat(file).st_size != 0]
+    print '%s non-empty annotation files' % len(files)
+    for file in files:
         doc = file.split('/')[-1].split('.')[0]
         graph = brat_to_graph(file)
-        graph.to_dot_language_and_image(doc)
+        graph.to_dot_language_and_image(file.split('.')[0])
 
 def brat_to_graph(file):
     g = Graph()
